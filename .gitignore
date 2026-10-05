@@ -1,0 +1,21 @@
+.env
+.venv/
+.tools/
+__pycache__/
+.pytest_cache/
+*.sqlite3
+*.sqlite3-*
+.dart_tool/
+build/
+android/local.properties
+android/key.properties
+*.jks
+*.keystore
+
+# Local agent tooling and editor state
+.agents/
+.codex/
+node_modules/
+.env.*
+!.env.example
+

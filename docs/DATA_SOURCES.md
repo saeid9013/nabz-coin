@@ -1,0 +1,13 @@
+# منابع بازار — بررسی ۲۰۲۶-۱۰-۰۵
+
+[قیمت‌گذاری رسمی CMC](https://coinmarketcap.com/api/pricing/) بررسی شد: Basic دارای ۱۵۰۰۰ اعتبار ماهانه، ۵۰ درخواست در دقیقه، یک خروجی تبدیل و بدون WebSocket است. مصرف scheduler با فاصله ده‌دقیقه، سی‌دقیقه و دو شاخص ساعتی برآورد ۷۲۰۰ اعتبار در ماه ۳۰روزه دارد؛ credit_count پاسخ و retries مصرف واقعی را تعیین می‌کنند.
+
+[Cryptocurrency](https://coinmarketcap.com/api/documentation/pro-api-reference/cryptocurrency/)، [Global metrics](https://coinmarketcap.com/api/documentation/pro-api-reference/global-metrics/) و [Content](https://coinmarketcap.com/api/documentation/pro-api-reference/content/) خوانده شدند. مسیر listings v3 در مستندات و فهرست Basic موجود است. دسترسی واقعی حساب، schema واقعی و تاریخچه با کلید کاربر آزموده نشده‌اند؛ خبر و OHLCV فرض نمی‌شوند.
+
+فعال در پیاده‌سازی: listings و global-metrics فقط در scheduler live؛ هیچ کلید در Flutter نیست. شاخص fear/altcoin نیاز به CMC_INDICES_ENABLED=true پس از تأیید حساب دارند. chart live کش تاریخچه یا قیمت‌های خودگردآوری ده‌دقیقه‌ای market_snapshots را ارائه می‌کند، حداکثر ۲۵۰ نقطه با حفظ ابتدا/انتها؛ در حالت collected پیش از شروع scheduler داده تاریخی نداریم.
+
+Metadata: مسیر رسمی /v2/cryptocurrency/info با CMC_METADATA_ENABLED=true، گروه حداکثر ۱۰۰ ID و فاصله هفت‌روزه، بودجه metadata مستقل. بر اساس مستندات ۱ اعتبار برای هر ۲۵۰ metadata بازگشتی؛ برای گروه ۱۰۰تایی پیش‌رزرو ۱ اعتبار. لوگو تنها از HTTPS s2.coinmarketcap.com پذیرفته می‌شود و از مسیر حدسی ساخته نمی‌شود. Mock آزموده؛ live تأیید نشده.
+
+History: /v3/cryptocurrency/quotes/historical تنها با CMC_HISTORY_ACCESS_CONFIRMED=true و CMC_HISTORY_IDS شامل حداکثر ۵ ID کش بازار فعال می‌شود. تأیید باید بر اساس حساب واقعی باشد؛ وجود endpoint در مستندات به معنی تضمین دسترسی حساب نیست. هر شش ساعت، سه بازه 1d/7d/30d با ۲۴ ساعتی / ۱۶۸ ساعتی / ۳۰ روزانه نقطه دریافت می‌شوند. برآورد قبل از هر درخواست ceil(count/100) و ارز فقط USD است؛ مصرف واقعی credit_count، retry و restart پایدار. مثال یک کوین، سه بازه، ماه ۳۰روزه: برآورد ۴۸۰ اعتبار بدون retry؛ با پنج کوین ۲۴۰۰ از cap پیش‌فرض history=2000 بیشتر است و دریافت اختیاری پیش از عبور متوقف می‌شود. API کاربر هرگز دریافت تاریخچه را شروع نمی‌کند. قفل scheduler درخواست‌های هم‌زمان را ادغام می‌کند. مسیر و قواعد مصرف در [مستندات رسمی](https://coinmarketcap.com/api/documentation/pro-api-reference/cryptocurrency/) دوباره بررسی و با mock آزموده شدند.
+
+برای live: کلید سرور، بودجه مصرف بیرونی EXTERNAL_CREDITS و DB مستقل تنظیم شود؛ اجرای API صرفاً خواندن cache است. 401/403 قابلیت job را persistently unavailable می‌کند؛ برای فعال‌سازی مجدد پس از اصلاح entitlement، job_status مربوطه توسط مدیر بررسی و reset شود. درخواست ناموفق با credit_count نامعلوم رزرو مصرف را نگه می‌دارد.
