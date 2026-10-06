@@ -169,14 +169,32 @@ def create_app(settings=None):
         return dict(**body, mode=settings.mode, fetched_at=fetched, freshness='stale' if age > 43200 else 'fresh')
 
     @app.get('/api/v1/discovery/{category}')
-    def discovery(category: Literal['sentiment', 'defi', 'dex', 'projects']):
+    def discovery(category: Literal['sentiment', 'defi', 'dex', 'projects'], include_raw: bool = False):
         if category == 'projects' and os.getenv('APP_COMMERCIAL_MODE', 'false') == 'true':
             return dict(mode=settings.mode, items=[], fetched_at=None, freshness='unavailable')
         result = store.get('discovery:' + category)
         if not result:
             return dict(mode=settings.mode, items=[], fetched_at=None, freshness='unavailable')
         body, fetched = result
+        if category == 'dex' and not include_raw:
+            body = {k: v for k, v in body.items() if k != 'raw'}
         intervals = {'sentiment': 21600, 'defi': 3600, 'dex': 900, 'projects': 604800}
+        if category == 'defi':
+            growth = store.get('discovery:defi-growth')
+            if growth:
+                monthly, monthly_fetched = growth
+                by_slug = {p['slug']: p for p in monthly['items']}
+                merged = []
+                for p in body['items']:
+                    item = {**p, **by_slug.get(p['slug'], {})}
+                    baseline = item.get('tvl_30d')
+                    if baseline is not None and baseline > 0:
+                        item['change_30d'] = (p['tvl'] / baseline - 1) * 100
+                        item['delta_30d'] = p['tvl'] - baseline
+                    merged.append(item)
+                body = {**body, 'items': merged,
+                        'growth_fetched_at': monthly_fetched, 'growth_calculated_at': monthly.get('calculated_at'),
+                        'growth_scope': monthly.get('scope'), 'growth_methodology': monthly.get('methodology')}
         age = (datetime.now(timezone.utc) - datetime.fromisoformat(fetched)).total_seconds()
         return dict(**body, mode=settings.mode, fetched_at=fetched, freshness='stale' if age > intervals[category] * 2 else 'fresh')
 

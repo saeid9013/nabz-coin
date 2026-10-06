@@ -3,6 +3,8 @@ from datetime import datetime, timezone, timedelta
 import math
 import os
 import httpx
+from concurrent.futures import ThreadPoolExecutor
+from .dex import collect_dex
 
 
 def number(value):
@@ -48,27 +50,28 @@ def collect(category, client):
                         tvl=number(p['tvl']), change_1d=number(p.get('change_1d'))) for p in protocols[:100]],
             chains=sorted([dict(name=p['name'], tvl=number(p.get('tvl'))) for p in chains if number(p.get('tvl')) is not None], key=lambda p:p['tvl'], reverse=True)[:30])
     if category == 'dex':
-        # Search results are pairs, not identity-matched coins or investment rankings.
-        pairs = {}
-        for query in ['BTC', 'ETH', 'SOL']:
-            for p in get('https://api.dexscreener.com/latest/dex/search?q=' + query).get('pairs') or []:
-                identity = (p.get('chainId'), p.get('pairAddress'))
-                if not all(identity):
-                    continue
-                pairs[identity] = dict(chain=p['chainId'], address=p['pairAddress'], dex=p.get('dexId'),
-                    base=p.get('baseToken', {}).get('symbol'), quote=p.get('quoteToken', {}).get('symbol'),
-                    token_address=p.get('baseToken', {}).get('address'), url=p.get('url'),
-                    price=number(p.get('priceUsd')), liquidity=number((p.get('liquidity') or {}).get('usd')),
-                    volume_24h=number((p.get('volume') or {}).get('h24')),
-                    price_native=number(p.get('priceNative')), fdv=number(p.get('fdv')),
-                    market_cap=number(p.get('marketCap')), created_at=number(p.get('pairCreatedAt')),
-                    periods={period: dict(change=number((p.get('priceChange') or {}).get(period)),
-                        volume=number((p.get('volume') or {}).get(period)),
-                        buys=number(((p.get('txns') or {}).get(period) or {}).get('buys')),
-                        sells=number(((p.get('txns') or {}).get(period) or {}).get('sells')))
-                        for period in ['m5', 'h1', 'h6', 'h24']})
-        return dict(source='DEX Screener', source_url='https://dexscreener.com/',
-            items=sorted(pairs.values(), key=lambda p:p['volume_24h'] or 0, reverse=True)[:60])
+        return collect_dex(client)
+    if category == 'defi-growth':
+        protocols = get('https://api.llama.fi/protocols')
+        ranked = sorted((p for p in protocols if number(p.get('tvl')) is not None and p.get('category') != 'CEX'), key=lambda p: number(p['tvl']), reverse=True)[:100]
+        now = datetime.now(timezone.utc)
+        target = now - timedelta(days=30)
+        def growth(p):
+            result = dict(slug=p['slug'], change_30d=None, tvl_30d=None, delta_30d=None, baseline_at=None, status='unavailable')
+            try:
+                rows = get('https://api.llama.fi/protocol/' + p['slug']).get('tvl', [])
+                candidates = [(int(x['date']), number(x.get('totalLiquidityUSD'))) for x in rows if number(x.get('date')) is not None and int(x['date']) <= target.timestamp() and number(x.get('totalLiquidityUSD')) is not None]
+                timestamp, baseline = max(candidates, default=(0, None))
+                if baseline is not None and baseline > 0 and target.timestamp() - timestamp <= 172800:
+                    result.update(change_30d=(number(p['tvl']) / baseline - 1) * 100, tvl_30d=baseline, delta_30d=number(p['tvl'])-baseline, baseline_at=datetime.fromtimestamp(timestamp,timezone.utc).isoformat(),status='ready')
+            except Exception:
+                pass
+            return result
+        with ThreadPoolExecutor(max_workers=4) as pool:
+            items = list(pool.map(growth, ranked))
+        if not any(p['status']=='ready' for p in items):
+            raise ValueError('Monthly history unavailable')
+        return dict(source='DefiLlama', source_url='https://defillama.com/', items=items, calculated_at=now.isoformat(), scope='top_100_by_current_tvl', methodology='Current TVL / daily TVL at or before 30 days ago, maximum baseline gap 48 hours; positive baseline required.')
     if category.startswith('protocol:'):
         slug = category.split(':', 1)[1]
         if slug not in ['lido', 'aave', 'uniswap']:
@@ -107,11 +110,11 @@ def tick_discovery(settings, store, client=None):
     own_client = client is None
     client = client or httpx.Client(timeout=20, follow_redirects=False)
     try:
-        for category, interval in [('sentiment', 21600), ('defi', 3600), ('dex', 900), ('projects', 604800), ('protocol:lido', 21600), ('protocol:aave', 21600), ('protocol:uniswap', 21600)]:
+        for category, interval in [('sentiment', 21600), ('defi', 3600), ('dex', 900), ('projects', 604800), ('protocol:lido', 21600), ('protocol:aave', 21600), ('protocol:uniswap', 21600), ('defi-growth', 21600)]:
             if category == 'projects' and (os.getenv('COINPAPRIKA_ENABLED', 'false') != 'true' or os.getenv('APP_COMMERCIAL_MODE', 'false') == 'true'):
                 continue
             name = 'discovery:' + category
-            owner = store.acquire_job(name, interval, ttl=180)
+            owner = store.acquire_job(name, interval, ttl=600)
             if not owner:
                 continue
             status = 'ready'

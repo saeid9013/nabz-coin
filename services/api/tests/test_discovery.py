@@ -102,3 +102,62 @@ def test_sentiment_next_update_from_provider():
     from datetime import datetime, timezone
     seconds=(datetime.fromisoformat(result['next_update'])-datetime.now(timezone.utc)).total_seconds()
     assert 590<seconds<=600
+
+
+def test_monthly_growth_uses_30_day_baseline_and_missing_is_not_zero():
+    from datetime import datetime, timezone, timedelta
+    baseline=int((datetime.now(timezone.utc)-timedelta(days=30,hours=1)).timestamp())
+    def request(r):
+        if r.url.path=='/protocols':
+            return httpx.Response(200,json=[dict(name=s,slug=s,tvl=100,category='Lending') for s in ['growing','zero','young']])
+        slug=r.url.path.split('/')[-1]
+        return httpx.Response(200,json={'tvl':[{'date':baseline if slug!='young' else baseline+86400,'totalLiquidityUSD':50 if slug!='zero' else 0}]})
+    with httpx.Client(transport=httpx.MockTransport(request)) as client:
+        items={x['slug']:x for x in collect('defi-growth',client)['items']}
+    assert items['growing']['change_30d']==100
+    assert items['growing']['delta_30d']==50
+    assert items['zero']['change_30d'] is None
+    assert items['young']['change_30d'] is None
+
+
+def test_dex_feeds_retain_raw_fields_and_survive_one_feed_failure():
+    pair=dict(chainId='solana',pairAddress='pool',baseToken={'symbol':'X','address':'token'},quoteToken={'symbol':'SOL','address':'sol'},priceUsd='2',liquidity={'usd':4,'base':2,'quote':1},boosts={'active':5},info={'websites':[{'url':'https://example.com'}]})
+    def request(r):
+        path=r.url.path
+        if path=='/ads/latest/v1':return httpx.Response(503)
+        if '/metas/' in path:return httpx.Response(200,json=[])
+        if '/latest/dex/' in path:return httpx.Response(200,json={'pairs':[pair]})
+        if '/tokens/' in path or '/token-pairs/' in path:return httpx.Response(200,json=[pair])
+        if '/orders/' in path:return httpx.Response(200,json=[{'type':'tokenAd','status':'approved'}])
+        return httpx.Response(200,json=[{'chainId':'solana','tokenAddress':'token','description':'<unsafe>','totalAmount':5,'customField':'preserved'}])
+    with httpx.Client(transport=httpx.MockTransport(request)) as client:
+        body=collect('dex',client)
+    assert len(body['items'])==1
+    assert body['items'][0]['liquidity_base']==2
+    assert body['items'][0]['boosts']['active']==5
+    assert body['statuses']['ads']=='unavailable'
+    assert body['feeds']['profiles'][0]['customField']=='preserved'
+    assert body['orders'][0]['data'][0]['status']=='approved'
+    assert len(body['endpoint_catalog'])==13
+
+
+def test_defi_api_merges_monthly_history_without_external_requests(tmp_path):
+    settings=Settings(mode='live',database=str(tmp_path/'data.db'),cmc_key='test')
+    store=Store(settings)
+    store.put('discovery:defi',dict(items=[dict(slug='a',tvl=100)],chains=[]))
+    store.put('discovery:defi-growth',dict(items=[dict(slug='a',change_30d=50,delta_30d=30)],calculated_at='2026-10-06T00:00:00+00:00',scope='top_100_by_current_tvl'))
+    with TestClient(create_app(settings)) as api:
+        body=api.get('/api/v1/discovery/defi').json()
+    assert body['items'][0]['change_30d']==50
+    assert body['items'][0]['tvl']==100
+
+
+def test_dex_raw_export_is_opt_in_and_only_reads_cache(tmp_path):
+    settings=Settings(mode='live',database=str(tmp_path/'data.db'),cmc_key='test')
+    Store(settings).put('discovery:dex',dict(items=[],feeds={'profiles':[{'tokenAddress':'x'}]},raw={'/feed':[{'extra':'kept'}]}))
+    with TestClient(create_app(settings)) as api:
+        normal=api.get('/api/v1/discovery/dex').json()
+        raw=api.get('/api/v1/discovery/dex?include_raw=true').json()
+    assert 'raw' not in normal
+    assert normal['feeds']['profiles'][0]['tokenAddress']=='x'
+    assert raw['raw']['/feed'][0]['extra']=='kept'
