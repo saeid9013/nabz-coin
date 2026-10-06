@@ -63,6 +63,7 @@ class ArticleResponse(BaseModel):
     demo: bool
     title_fa: str | None = None
     summary_fa: str | None = None
+    original_fa: bool = False
     translation_status: str
 
 

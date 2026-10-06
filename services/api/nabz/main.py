@@ -120,13 +120,14 @@ def create_app(settings=None):
             params.append(coin_id)
         params.append(limit+1)
         with store.connection() as db:
-            rows = db.execute('SELECT a.*,t.title_fa,t.summary_fa,t.status AS translation_status FROM articles a '
+            rows = db.execute('SELECT a.*,t.title_fa,t.summary_fa,t.status AS translation_status,t.model AS translation_model FROM articles a '
                 'LEFT JOIN translations t ON t.rowid=(SELECT rowid FROM translations WHERE article_id=a.id '
                 "AND input_hash=a.input_hash ORDER BY (status='ready') DESC,rowid DESC LIMIT 1) "
                 'WHERE ' + ' AND '.join(where) + ' ORDER BY a.published_at DESC,a.id DESC LIMIT ?', params).fetchall()
         items = []
         for row in rows:
             item = dict(row)
+            item['original_fa'] = item.get('translation_model') == 'persian-source-v1'
             item['coin_ids'] = json.loads(item['coin_ids'])
             item['demo'] = bool(item['demo'])
             item['translation_status'] = item['translation_status'] or 'pending'
@@ -146,11 +147,12 @@ def create_app(settings=None):
     @app.get('/api/v1/news/{article_id}', response_model=ArticleResponse)
     def article(article_id: str):
         with store.connection() as db:
-            row = db.execute('SELECT a.*,t.title_fa,t.summary_fa,t.status AS translation_status FROM articles a '
+            row = db.execute('SELECT a.*,t.title_fa,t.summary_fa,t.status AS translation_status,t.model AS translation_model FROM articles a '
                 'LEFT JOIN translations t ON t.rowid=(SELECT rowid FROM translations WHERE article_id=a.id '
                 "AND input_hash=a.input_hash ORDER BY (status='ready') DESC,rowid DESC LIMIT 1) WHERE a.id=?", (article_id,)).fetchone()
         if row:
             item = dict(row)
+            item['original_fa'] = item.get('translation_model') == 'persian-source-v1'
             item.update(coin_ids=json.loads(item['coin_ids']), demo=bool(item['demo']),
                 translation_status=item['translation_status'] or 'pending')
             return item

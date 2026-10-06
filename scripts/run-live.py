@@ -16,7 +16,10 @@ def main():
     env = {**os.environ, 'APP_MODE': 'live', 'CMC_API_KEY': key,
            'DATABASE_PATH': str(ROOT / '.tools/live/market.sqlite3'),
            'CMC_METADATA_ENABLED': 'false', 'CMC_INDICES_ENABLED': 'false',
-           'CMC_HISTORY_IDS': '', 'NEWS_FEED_URLS': '', 'TRANSLATION_PROVIDER': 'disabled'}
+           'CMC_HISTORY_IDS': '', 'NEWS_FEED_URLS': os.getenv('NEWS_FEED_URLS', 'https://mihansignal.com/news/feed/'),
+           'NEWS_ALLOWED_DOMAINS': os.getenv('NEWS_ALLOWED_DOMAINS', 'mihansignal.com'),
+           'NEWS_LICENSE_CONFIRMED': os.getenv('NEWS_LICENSE_CONFIRMED', 'true'),
+           'TRANSLATION_PROVIDER': os.getenv('TRANSLATION_PROVIDER', 'persian')}
     processes = []
     try:
         subprocess.run([sys.executable, '-m', 'nabz.scheduler', '--once'], cwd=ROOT / 'services/api', env=env, check=True)

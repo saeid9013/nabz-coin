@@ -20,3 +20,5 @@
 @media(max-width:500px){#theme-toggle{min-width:48px;padding:10px}#theme-toggle span{display:none}#mode-badge{white-space:nowrap}.topbar>div:first-child{max-width:46%}}
 
 .coin-avatar{position:relative;background:var(--raised)}.coin-avatar>.ui-icon{width:24px;height:24px;color:var(--muted)}.coin-avatar>img{position:absolute;inset:0;margin:auto;width:32px;height:32px;object-fit:contain;background:var(--raised)}
+
+.encyclopedia{margin-top:24px}.encyclopedia p{line-height:1.9}.encyclopedia a{color:var(--accent);overflow-wrap:anywhere}

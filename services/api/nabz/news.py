@@ -109,8 +109,8 @@ class RssProvider:
                         continue
                 except (ValueError, TypeError):
                     continue
-                items.append(dict(title=title, summary=clean(node.findtext('description', '')),
-                    url=canonical, publisher=urlsplit(url).hostname, published_at=published.astimezone(timezone.utc).isoformat(), demo=False))
+                items.append(dict(title=title, summary=clean(node.findtext('description', ''))[:500],
+                    url=canonical, publisher={'mihansignal.com': 'میهن سیگنال'}.get(urlsplit(url).hostname, urlsplit(url).hostname), published_at=published.astimezone(timezone.utc).isoformat(), demo=False))
         return items
 
 
@@ -175,6 +175,18 @@ class DemoTranslationProvider:
         if title != 'Demo: Bitcoin market guide 2026' or summary != 'Sample data only; price is 62450.25 USD.':
             raise ValueError('Demo translator supports only its exact fixture')
         return Translation(title_fa='دمو: راهنمای بازار بیت‌کوین 2026', summary_fa='فقط داده نمونه؛ قیمت 62450.25 USD است.')
+
+
+class PersianNewsProvider:
+    """Publish already-Persian feed text without calling a translation service."""
+    model = 'persian-source-v1'
+    prompt_version = 'v1'
+    demo = False
+
+    def translate(self, title, summary):
+        translated = Translation(title_fa=title, summary_fa=summary)
+        validate_translation(title, summary, translated)
+        return translated
 
 
 def validate_translation(title, summary, translated):

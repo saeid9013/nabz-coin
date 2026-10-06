@@ -4,7 +4,7 @@ import time
 from .config import Settings
 from .providers import CmcProvider, DemoProvider, CapabilityUnavailable
 from .store import Store, BudgetExceeded, now_iso
-from .news import DemoNewsProvider, DemoTranslationProvider, RssProvider, ingest, translate_one, enqueue_current
+from .news import DemoNewsProvider, DemoTranslationProvider, PersianNewsProvider, RssProvider, ingest, translate_one, enqueue_current
 from .translation import OpenAITranslationProvider
 
 
@@ -122,8 +122,12 @@ def main():
                 model=os.getenv('TRANSLATION_MODEL', ''), input_usd_per_million=os.getenv('TRANSLATION_INPUT_USD_PER_MILLION', '0'),
                 output_usd_per_million=os.getenv('TRANSLATION_OUTPUT_USD_PER_MILLION', '0'),
                 daily_limit_usd=os.getenv('TRANSLATION_DAILY_USD_LIMIT', '0'))
+        elif translation_provider == 'persian':
+            if not urls:
+                raise ValueError('Persian news requires NEWS_FEED_URLS')
+            translator = PersianNewsProvider()
         elif translation_provider != 'disabled':
-            raise ValueError('TRANSLATION_PROVIDER must be disabled or openai')
+            raise ValueError('TRANSLATION_PROVIDER must be disabled, persian or openai')
     logging.basicConfig(level=logging.INFO)
     while True:
         tick(settings, store, provider)

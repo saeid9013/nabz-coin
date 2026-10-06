@@ -1,0 +1,229 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "cmc_id": 1,
+      "symbol": "BTC",
+      "name_fa": "بیت‌کوین",
+      "reviewed_at": "2026-10-06",
+      "summary": "بیت‌کوین شبکه پرداخت همتابه‌همتا و پول دیجیتال غیرمتمرکز است.",
+      "history": "ساتوشی ناکاموتو مشخصات و نخستین پیاده‌سازی بیت‌کوین را منتشر کرد؛ شبکه در سال ۲۰۰۹ آغاز به کار کرد.",
+      "team": "پدیدآورنده: ساتوشی ناکاموتو، با هویت ناشناخته. توسعه شبکه توسط مشارکت‌کنندگان متن‌باز ادامه دارد. پژوهشگران پیشین و توسعه‌دهندگان اولیه را نباید هم‌بنیان‌گذار نامید.",
+      "sources": [
+        "https://bitcoin.org/en/faq#who-created-bitcoin",
+        "https://bitcoin.org/bitcoin.pdf"
+      ]
+    },
+    {
+      "cmc_id": 1027,
+      "symbol": "ETH",
+      "name_fa": "اتریوم",
+      "reviewed_at": "2026-10-06",
+      "summary": "اتریوم بستری برای اجرای قراردادهای هوشمند و برنامه‌های غیرمتمرکز است.",
+      "history": "ویتالیک بوترین طرح اتریوم را در سال ۲۰۱۳ مطرح کرد. شبکه در سال ۲۰۱۵ راه‌اندازی شد؛ در سال ۲۰۲۲ اجماع آن به اثبات سهام تغییر کرد.",
+      "team": "ویتالیک بوترین و جمعی از هم‌بنیان‌گذاران در شکل‌گیری اتریوم مشارکت داشتند؛ توسعه کنونی توسط تیم‌ها و جامعه متن‌باز انجام می‌شود.",
+      "sources": [
+        "https://ethereum.org/ethereum-history-founder-and-ownership/",
+        "https://ethereum.org/whitepaper/"
+      ]
+    },
+    {
+      "cmc_id": 5426,
+      "symbol": "SOL",
+      "name_fa": "سولانا",
+      "reviewed_at": "2026-10-06",
+      "summary": "شبکه‌ای برای پرداخت و اجرای برنامه‌های بلاکچینی است.",
+      "sources": [
+        "https://solana.com/"
+      ],
+      "review_scope": "intro_only"
+    },
+    {
+      "cmc_id": 1839,
+      "symbol": "BNB",
+      "name_fa": "بی‌ان‌بی",
+      "reviewed_at": "2026-10-06",
+      "summary": "دارایی بومی اکوسیستم BNB Chain است.",
+      "sources": [
+        "https://www.bnbchain.org/en"
+      ],
+      "review_scope": "intro_only"
+    },
+    {
+      "cmc_id": 52,
+      "symbol": "XRP",
+      "name_fa": "ایکس‌آرپی",
+      "reviewed_at": "2026-10-06",
+      "summary": "دارایی بومی دفترکل XRP Ledger است که برای انتقال ارزش استفاده می‌شود.",
+      "sources": [
+        "https://xrpl.org/"
+      ],
+      "review_scope": "intro_only"
+    },
+    {
+      "cmc_id": 2010,
+      "symbol": "ADA",
+      "name_fa": "کاردانو",
+      "reviewed_at": "2026-10-06",
+      "summary": "دارایی بومی شبکه کاردانو، بستری برای برنامه‌های غیرمتمرکز است.",
+      "sources": [
+        "https://cardano.org/"
+      ],
+      "review_scope": "intro_only"
+    },
+    {
+      "cmc_id": 5805,
+      "symbol": "AVAX",
+      "name_fa": "اولانچ",
+      "reviewed_at": "2026-10-06",
+      "summary": "دارایی بومی اکوسیستم اولانچ برای برنامه‌های بلاکچینی است.",
+      "sources": [
+        "https://www.avalanche.com/"
+      ],
+      "review_scope": "intro_only"
+    },
+    {
+      "cmc_id": 1975,
+      "symbol": "LINK",
+      "name_fa": "چین‌لینک",
+      "reviewed_at": "2026-10-06",
+      "summary": "چین‌لینک زیرساخت اوراکل برای اتصال قراردادهای هوشمند به داده‌ها و خدمات فراهم می‌کند.",
+      "sources": [
+        "https://chain.link/"
+      ],
+      "review_scope": "intro_only"
+    },
+    {
+      "cmc_id": 22974,
+      "symbol": "TAO",
+      "name_fa": "بیت‌تنسور",
+      "reviewed_at": "2026-10-06",
+      "summary": "شبکه‌ای باز با زیرشبکه‌هایی برای خدماتی مانند محاسبات و استنتاج است؛ TAO توکن آن است.",
+      "sources": [
+        "https://www.bittensor.com/docs"
+      ],
+      "review_scope": "intro_only"
+    },
+    {
+      "cmc_id": 20947,
+      "symbol": "SUI",
+      "name_fa": "سویی",
+      "reviewed_at": "2026-10-06",
+      "summary": "سویی بستری برای اجرای برنامه‌ها و دارایی‌های دیجیتال است.",
+      "sources": [
+        "https://www.sui.io/"
+      ],
+      "review_scope": "intro_only"
+    },
+    {
+      "cmc_id": 21794,
+      "symbol": "APT",
+      "name_fa": "اپتوس",
+      "reviewed_at": "2026-10-06",
+      "summary": "اپتوس شبکه‌ای برای توسعه برنامه‌های بلاکچینی است.",
+      "sources": [
+        "https://aptosnetwork.com/"
+      ],
+      "review_scope": "intro_only"
+    },
+    {
+      "cmc_id": 5690,
+      "symbol": "RENDER",
+      "name_fa": "رندر",
+      "reviewed_at": "2026-10-06",
+      "summary": "Render Network منابع پردازش گرافیکی را در شبکه‌ای توزیع‌شده به کار می‌گیرد.",
+      "sources": [
+        "https://rendernetwork.com/"
+      ],
+      "review_scope": "intro_only"
+    },
+    {
+      "cmc_id": 20396,
+      "symbol": "KAS",
+      "name_fa": "کاسپا",
+      "reviewed_at": "2026-10-06",
+      "summary": "کاسپا شبکه‌ای با اثبات کار و ساختار blockDAG است.",
+      "sources": [
+        "https://kaspa.org/"
+      ],
+      "review_scope": "intro_only"
+    },
+    {
+      "cmc_id": 328,
+      "symbol": "XMR",
+      "name_fa": "مونرو",
+      "reviewed_at": "2026-10-06",
+      "summary": "مونرو بر حفاظت از حریم خصوصی تراکنش‌ها تمرکز دارد.",
+      "sources": [
+        "https://www.getmonero.org/"
+      ],
+      "review_scope": "intro_only"
+    },
+    {
+      "cmc_id": 6535,
+      "symbol": "NEAR",
+      "name_fa": "نیر",
+      "reviewed_at": "2026-10-06",
+      "summary": "نیر زیرساختی برای برنامه‌ها و کاربردهای بلاکچینی فراهم می‌کند.",
+      "sources": [
+        "https://www.near.org/"
+      ],
+      "review_scope": "intro_only"
+    },
+    {
+      "cmc_id": 1958,
+      "symbol": "TRX",
+      "name_fa": "ترون",
+      "reviewed_at": "2026-10-06",
+      "summary": "ترون شبکه‌ای برای انتقال دارایی دیجیتال و اجرای برنامه‌های غیرمتمرکز است.",
+      "sources": [
+        "https://developers.tron.network/docs/getting-start"
+      ],
+      "review_scope": "intro_only"
+    },
+    {
+      "cmc_id": 11419,
+      "symbol": "TON",
+      "name_fa": "تون",
+      "reviewed_at": "2026-10-06",
+      "summary": "TON شبکه بلاکچینی لایه یک برای برنامه‌ها و خدمات دیجیتال است.",
+      "sources": [
+        "https://ton.org/"
+      ],
+      "review_scope": "intro_only"
+    },
+    {
+      "cmc_id": 7083,
+      "symbol": "UNI",
+      "name_fa": "یونی‌سواپ",
+      "reviewed_at": "2026-10-06",
+      "summary": "یونی‌سواپ پروتکل مبادله غیرمتمرکز با استخرهای نقدینگی است.",
+      "sources": [
+        "https://developers.uniswap.org/docs/get-started/concepts/how-uniswap-works"
+      ],
+      "review_scope": "intro_only"
+    },
+    {
+      "cmc_id": 11841,
+      "symbol": "ARB",
+      "name_fa": "آربیتروم",
+      "reviewed_at": "2026-10-06",
+      "summary": "آربیتروم زیرساختی برای توسعه و اجرای برنامه‌های بلاکچینی در اکوسیستم اتریوم فراهم می‌کند.",
+      "sources": [
+        "https://arbitrum.io/"
+      ],
+      "review_scope": "intro_only"
+    },
+    {
+      "cmc_id": 11840,
+      "symbol": "OP",
+      "name_fa": "آپتیمیزم",
+      "reviewed_at": "2026-10-06",
+      "summary": "آپتیمیزم زیرساختی برای شبکه‌ها و برنامه‌های مبتنی بر اتریوم فراهم می‌کند.",
+      "sources": [
+        "https://optimism.io/"
+      ],
+      "review_scope": "intro_only"
+    }
+  ]
+}
