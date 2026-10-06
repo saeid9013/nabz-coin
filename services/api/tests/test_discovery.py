@@ -60,3 +60,45 @@ def test_defi_excludes_cex_and_nonfinite_tvl():
     with httpx.Client(transport=httpx.MockTransport(request)) as client:
         result=collect('defi',client)
         assert [p['name'] for p in result['items']]==['Lending']
+
+def test_dex_analytics_preserve_missing_values():
+    def request(r):
+        return httpx.Response(200,json={'pairs':[dict(chainId='eth',pairAddress='pair',baseToken={'symbol':'X'},quoteToken={'symbol':'USD'},priceUsd='2',marketCap=40,fdv=80,priceNative='0.001',priceChange={'m5':-2.5},txns={'m5':{'buys':12,'sells':7}},volume={'m5':900})]})
+    with httpx.Client(transport=httpx.MockTransport(request)) as client:
+        item=collect('dex',client)['items'][0]
+        assert item['periods']['m5']==dict(change=-2.5,volume=900,buys=12,sells=7)
+        assert item['periods']['h24']['buys'] is None
+        assert item['market_cap']==40 and item['price_native']==.001
+
+
+def test_protocol_history_survives_missing_revenue(tmp_path):
+    def request(r):
+        if r.url.path=='/protocol/lido':
+            return httpx.Response(200,json={'name':'Lido','tvl':[{'date':1700086400,'totalLiquidityUSD':20},{'date':1700000000,'totalLiquidityUSD':10},{'date':1699000000,'totalLiquidityUSD':'NaN'}]})
+        if r.url.params.get('dataType')=='dailyFees':
+            return httpx.Response(200,json={'total24h':5,'total7d':30,'total30d':100,'totalDataChart':[[1700000000,5]]})
+        return httpx.Response(503)
+    with httpx.Client(transport=httpx.MockTransport(request)) as client:
+        body=collect('protocol:lido',client)
+        with pytest.raises(ValueError):collect('protocol:unknown',client)
+    item=body['items'][0]
+    assert [p['price'] for p in item['history']]==[10,20]
+    assert item['metrics']['dailyFees']['total_24h']==5
+    assert item['metrics']['dailyFees']['total_30d']==100
+    assert item['metrics']['dailyRevenue']['total_24h'] is None
+    settings=Settings(mode='live',database=str(tmp_path/'live.db'),cmc_key='test')
+    Store(settings).put('discovery:protocol:lido',body)
+    with TestClient(create_app(settings)) as api:
+        assert api.get('/api/v1/protocols/lido').json()['items'][0]['name']=='Lido'
+        assert api.get('/api/v1/protocols/aave').json()['items']==[]
+        assert api.get('/api/v1/protocols/unknown').status_code==422
+
+
+def test_sentiment_next_update_from_provider():
+    def request(r):
+        return httpx.Response(200,json={'data':[{'value':'73','timestamp':'1791244800','value_classification':'Greed','time_until_update':'600'}]})
+    with httpx.Client(transport=httpx.MockTransport(request)) as client:
+        result=collect('sentiment',client)
+    from datetime import datetime, timezone
+    seconds=(datetime.fromisoformat(result['next_update'])-datetime.now(timezone.utc)).total_seconds()
+    assert 590<seconds<=600

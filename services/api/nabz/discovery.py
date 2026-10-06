@@ -1,5 +1,5 @@
 """Fixed-origin, scheduled complementary data. Public requests only read cache."""
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 import math
 import os
 import httpx
@@ -21,7 +21,7 @@ def collect(category, client):
             raise ValueError('Response too large')
         return response.json()
     if category == 'sentiment':
-        data = get('https://api.alternative.me/fng/?limit=30')
+        data = get('https://api.alternative.me/fng/?limit=31')
         if data.get('metadata', {}).get('error'):
             raise ValueError('Sentiment unavailable')
         items = []
@@ -31,7 +31,14 @@ def collect(category, client):
                 raise ValueError('Invalid sentiment value')
             items.append(dict(value=value, classification=item['value_classification'],
                               time=datetime.fromtimestamp(int(item['timestamp']), timezone.utc).isoformat()))
-        return dict(source='Alternative.me', source_url='https://alternative.me/crypto/fear-and-greed-index/', items=items)
+        remaining = number(data['data'][0].get('time_until_update'))
+        if remaining is None:
+            try:
+                remaining = number(get('https://api.alternative.me/fng/?limit=1')['data'][0].get('time_until_update'))
+            except Exception:
+                remaining = None
+        next_update = (datetime.now(timezone.utc) + timedelta(seconds=remaining)).isoformat() if remaining is not None and remaining >= 0 else None
+        return dict(source='Alternative.me', source_url='https://alternative.me/crypto/fear-and-greed-index/', items=items, next_update=next_update)
     if category == 'defi':
         protocols = get('https://api.llama.fi/protocols')
         chains = get('https://api.llama.fi/v2/chains')
@@ -52,9 +59,37 @@ def collect(category, client):
                     base=p.get('baseToken', {}).get('symbol'), quote=p.get('quoteToken', {}).get('symbol'),
                     token_address=p.get('baseToken', {}).get('address'), url=p.get('url'),
                     price=number(p.get('priceUsd')), liquidity=number((p.get('liquidity') or {}).get('usd')),
-                    volume_24h=number((p.get('volume') or {}).get('h24')))
+                    volume_24h=number((p.get('volume') or {}).get('h24')),
+                    price_native=number(p.get('priceNative')), fdv=number(p.get('fdv')),
+                    market_cap=number(p.get('marketCap')), created_at=number(p.get('pairCreatedAt')),
+                    periods={period: dict(change=number((p.get('priceChange') or {}).get(period)),
+                        volume=number((p.get('volume') or {}).get(period)),
+                        buys=number(((p.get('txns') or {}).get(period) or {}).get('buys')),
+                        sells=number(((p.get('txns') or {}).get(period) or {}).get('sells')))
+                        for period in ['m5', 'h1', 'h6', 'h24']})
         return dict(source='DEX Screener', source_url='https://dexscreener.com/',
             items=sorted(pairs.values(), key=lambda p:p['volume_24h'] or 0, reverse=True)[:60])
+    if category.startswith('protocol:'):
+        slug = category.split(':', 1)[1]
+        if slug not in ['lido', 'aave', 'uniswap']:
+            raise ValueError('Unsupported protocol')
+        p = get('https://api.llama.fi/protocol/' + slug)
+        history = sorted([dict(time=datetime.fromtimestamp(int(x['date']), timezone.utc).isoformat(),
+                               price=number(x.get('totalLiquidityUSD'))) for x in p.get('tvl', [])
+                          if number(x.get('totalLiquidityUSD')) is not None], key=lambda x: x['time'])
+        metrics = {}
+        for kind in ['dailyFees', 'dailyRevenue']:
+            try:
+                result = get('https://api.llama.fi/summary/fees/' + slug + '?dataType=' + kind)
+                rows = sorted([dict(time=datetime.fromtimestamp(int(x[0]), timezone.utc).isoformat(), price=number(x[1]))
+                               for x in result.get('totalDataChart', []) if len(x) == 2 and number(x[1]) is not None], key=lambda x:x['time'])
+                metrics[kind] = dict(total_24h=number(result.get('total24h')), total_7d=number(result.get('total7d')), total_30d=number(result.get('total30d')),
+                    points=rows, methodology=result.get('methodology'))
+            except Exception:
+                metrics[kind] = dict(total_24h=None, total_7d=None, total_30d=None, points=[], methodology=None)
+        return dict(source='DefiLlama', source_url='https://defillama.com/protocol/' + slug,
+                    items=[dict(slug=slug, name=p['name'], symbol=p.get('symbol'), description=p.get('description'),
+                                chains=p.get('chains', []), history=history, metrics=metrics)])
     if category == 'projects':
         items = []
         for identity in ['btc-bitcoin', 'eth-ethereum', 'sol-solana', 'ada-cardano', 'xrp-xrp']:
@@ -72,7 +107,7 @@ def tick_discovery(settings, store, client=None):
     own_client = client is None
     client = client or httpx.Client(timeout=20, follow_redirects=False)
     try:
-        for category, interval in [('sentiment', 21600), ('defi', 3600), ('dex', 900), ('projects', 604800)]:
+        for category, interval in [('sentiment', 21600), ('defi', 3600), ('dex', 900), ('projects', 604800), ('protocol:lido', 21600), ('protocol:aave', 21600), ('protocol:uniswap', 21600)]:
             if category == 'projects' and (os.getenv('COINPAPRIKA_ENABLED', 'false') != 'true' or os.getenv('APP_COMMERCIAL_MODE', 'false') == 'true'):
                 continue
             name = 'discovery:' + category

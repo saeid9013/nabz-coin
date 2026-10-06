@@ -1,7 +1,7 @@
-import {renderExplore} from './explore.js?v=15';
+import {renderExplore} from './explore.js?v=17';
 document.addEventListener('error',ev=>{if(ev.target.matches?.('.coin-avatar img'))ev.target.remove();},true);
-import {icon,chartCoordinate} from './ui.js?v=15';
-import {demoMarket,demoNews,demoChart,coinNames,escapeHTML as e,usd,date,relative,selectCoins,safeURL,chartPath,DataClient} from './data.js?v=15';
+import {icon,chartCoordinate} from './ui.js?v=17';
+import {demoMarket,demoNews,demoChart,coinNames,escapeHTML as e,usd,date,relative,selectCoins,safeURL,chartPath,DataClient} from './data.js?v=17';
 const main=document.querySelector('main');
 function read(key,fallback){try{return JSON.parse(localStorage.getItem(key))??fallback;}catch{return fallback;}}
 let settings={theme:'dark',persian:true,scale:1,mode:'demo',...read('nabz:web:settings',{})},watch=read('nabz:web:watch',[]),saved=read('nabz:web:saved',[]);
@@ -10,7 +10,7 @@ let generation=0,market=null,query='',sort='rank',range='7d',newsItems=[],nextCu
 const client=()=>new DataClient({mode:settings.mode});
 function persist(){try{localStorage.setItem('nabz:web:settings',JSON.stringify(settings));localStorage.setItem('nabz:web:watch',JSON.stringify(watch));localStorage.setItem('nabz:web:saved',JSON.stringify(saved));}catch{toast('ذخیره محلی در این مرورگر در دسترس نیست.');}applySettings();}
 function applySettings(){const dark=settings.theme==='dark'||settings.theme==='system'&&matchMedia('(prefers-color-scheme:dark)').matches;document.documentElement.dataset.theme=dark?'dark':'light';document.documentElement.style.fontSize=`${16*settings.scale}px`;document.querySelector('#theme-toggle').innerHTML=icon(dark?'sun':'moon')+`<span>${dark?'تم روشن':'تم تیره'}</span>`;document.querySelector('#watch-count').textContent=num(watch.length);document.querySelector('#mode-badge').textContent=settings.mode==='demo'?'حالت دمو':'داده واقعی';}
-function num(v){return new Intl.NumberFormat(settings.persian?'fa-IR':'en-US').format(v);}
+function num(v,options={}){return new Intl.NumberFormat(settings.persian?'fa-IR':'en-US',options).format(v);}
 function money(v,compact=false){return `<bdi class="num">${e(usd(v,settings.persian,compact))}</bdi>`;}
 function percent(v){return `<bdi class="num ${v>=0?'positive':'negative'}">${v>=0?'+':'−'}${num(Math.abs(v).toFixed(2))}%</bdi>`;}
 function toast(message){const t=document.querySelector('#toast');t.textContent=message;t.classList.add('visible');clearTimeout(toast.timer);toast.timer=setTimeout(()=>t.classList.remove('visible'),3500);}
@@ -40,4 +40,4 @@ document.querySelector('#theme-toggle').onclick=()=>{settings.theme=document.doc
 
 if('serviceWorker'in navigator)navigator.serviceWorker.register('./sw.js').catch(()=>toast('ذخیره پوسته آفلاین فعال نشد؛ نسخه آنلاین قابل استفاده است.'));
 
-async function renderEncyclopedia(token,c){try{const response=await fetch('content/encyclopedia.json?v=15');if(!response.ok)return;const data=await response.json();if(token!==generation)return;const item=data.items.find(x=>x.cmc_id===c.id&&x.symbol===c.symbol);if(!item)return;const section=document.createElement('section');section.className='panel encyclopedia';section.innerHTML=`<h2>درباره ${e(item.name_fa)}</h2><p>${e(item.summary)}</p>${item.history&&item.team?`<details><summary>تاریخچه و سازندگان</summary><h3>تاریخچه</h3><p>${e(item.history)}</p><h3>سازندگان و توسعه‌دهندگان</h3><p>${e(item.team)}</p></details>`:'<p class=muted>این مدخل فعلاً معرفی کوتاه است؛ تاریخچه و تیم در حال بررسی‌اند.</p>'}<h3>منابع</h3><ul>${item.sources.filter(safeURL).map(url=>`<li><a href="${e(url)}" target="_blank" rel="noopener noreferrer">${e(new URL(url).hostname)}</a></li>`).join('')}</ul><p class="muted">بازبینی: ${e(item.reviewed_at)} · اطلاعات آموزشی</p>`;main.append(section);}catch{}}
+async function renderEncyclopedia(token,c){try{const response=await fetch('content/encyclopedia.json?v=17');if(!response.ok)return;const data=await response.json();if(token!==generation)return;const item=data.items.find(x=>x.cmc_id===c.id&&x.symbol===c.symbol);if(!item)return;const section=document.createElement('section');section.className='panel encyclopedia';section.innerHTML=`<h2>درباره ${e(item.name_fa)}</h2><p>${e(item.summary)}</p>${item.history&&item.team?`<details><summary>تاریخچه و سازندگان</summary><h3>تاریخچه</h3><p>${e(item.history)}</p><h3>سازندگان و توسعه‌دهندگان</h3><p>${e(item.team)}</p></details>`:'<p class=muted>این مدخل فعلاً معرفی کوتاه است؛ تاریخچه و تیم در حال بررسی‌اند.</p>'}<h3>منابع</h3><ul>${item.sources.filter(safeURL).map(url=>`<li><a href="${e(url)}" target="_blank" rel="noopener noreferrer">${e(new URL(url).hostname)}</a></li>`).join('')}</ul><p class="muted">بازبینی: ${e(item.reviewed_at)} · اطلاعات آموزشی</p>`;main.append(section);}catch{}}
