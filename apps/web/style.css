@@ -35,3 +35,6 @@
 @media(max-width:650px){.sentiment-overview>.panel,#protocol-analytics{padding:16px}}
 .explore-content{min-width:0}.explore-content>*,#protocol-body,.price-plot,.explore-table{min-width:0}.explore-content .panel{max-width:100%}.analytics-controls{min-width:0}.analytics-controls>div{min-width:0}.analytics-controls select{max-width:100%}.explore-table{max-width:100%}.explore-content .chart-times span{min-width:0;overflow-wrap:anywhere}
 @media(max-width:650px){.analytics-controls>div{flex-basis:100%}.explore-content .chart-times{gap:12px}}
+.chart-style-controls,.candle-toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-block:16px}.chart-style-controls button[aria-pressed=true],.candle-toolbar button[aria-pressed=true]{background:var(--primary);color:white}.candle-widget{height:580px;width:100%;min-width:0;direction:ltr}.candle-widget>.tradingview-widget-container__widget{height:100%;width:100%}.candle-widget iframe{max-width:100%}.chart-panel{min-width:0}.tradingview-widget-copyright{font-size:.8125rem;margin-top:12px}@media(max-width:650px){.candle-widget{height:480px}.candle-toolbar button{flex:1;min-width:70px;padding-inline:8px}.chart-style-controls button{flex:1}}
+/* Provider assigns inline height:100%; retain a definite responsive chart height. */
+.candle-widget{height:580px!important}@media(max-width:650px){.candle-widget{height:480px!important}}

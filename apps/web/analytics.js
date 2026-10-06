@@ -1,5 +1,5 @@
-import {chartPath} from './data.js?v=17';
-import {chartCoordinate} from './ui.js?v=17';
+import {chartPath} from './data.js?v=19';
+import {chartCoordinate} from './ui.js?v=19';
 
 export function dexEmbedURL(pair,theme='dark') {
  if(!/^[a-z0-9-]+$/i.test(pair.chain||'')||!/^[a-z0-9]+$/i.test(pair.address||''))return null;
