@@ -1,5 +1,5 @@
-import {chartPath} from './data.js?v=20';
-import {chartCoordinate} from './ui.js?v=20';
+import {chartPath} from './data.js?v=22';
+import {chartCoordinate} from './ui.js?v=22';
 
 export function dexEmbedURL(pair,theme='dark') {
  if(!/^[a-z0-9-]+$/i.test(pair.chain||'')||!/^[a-z0-9]+$/i.test(pair.address||''))return null;
@@ -44,3 +44,4 @@ export function dexDetails(p,{e,num,money,date,link},period='h24') {
  const metric=(label,v)=>`<div class="data-card"><small>${label}</small><strong>${v}</strong></div>`;
  return `<nav class="analytics-controls" aria-label="بازه آمار جفت">${Object.entries({m5:'۵ دقیقه',h1:'۱ ساعت',h6:'۶ ساعت',h24:'۲۴ ساعت'}).map(([k,v])=>`<button data-dex-period="${k}" aria-pressed="${k===period}">${v}</button>`).join('')}</nav><div class="protocol-stats">${metric('تغییر قیمت',change===null||change===undefined?'—':`<bdi class="${change<0?'negative':'positive'}">${change>0?'+':''}${num(change)}%</bdi>`)}${metric('حجم این بازه',money(value.volume,true))}${metric('تعداد خرید',buys===null||buys===undefined?'—':num(buys))}${metric('تعداد فروش',sells===null||sells===undefined?'—':num(sells))}${metric('ارزش بازار',money(p.market_cap,true))}${metric('ارزش کاملاً رقیق‌شده (FDV)',money(p.fdv,true))}${metric('قیمت در ارز مقابل',p.price_native===null||p.price_native===undefined?'—':`<bdi>${num(p.price_native,{maximumFractionDigits:12,notation:p.price_native!==0&&Math.abs(p.price_native)<1e-10?'scientific':'standard'})} ${e(p.quote)}</bdi>`)}</div><p class="hint">تعداد خرید و فروش، تعداد تراکنش‌هاست؛ تعداد معامله‌گران یکتا نیست.</p>${p.created_at?`<p class="muted">ایجاد جفت: ${e(date(new Date(p.created_at).toISOString()))}</p>`:''}<p class="muted">آدرس قرارداد توکن پایه · هویت توکن تأیید نشده</p><p class="contract" dir="ltr">${e(p.token_address)}</p>${link(p.url,'نمودار شمعی و ریز معاملات در DEX Screener')}<p class="hint">نمودار شمعی و ریز معاملات از ویجت رسمی منبع نمایش داده می‌شوند؛ آمار فارسی بالا از کش سایت است و ممکن است زمان آن متفاوت باشد.</p>`;
 }
+
