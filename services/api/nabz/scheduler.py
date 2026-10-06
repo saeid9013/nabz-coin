@@ -1,6 +1,7 @@
 import argparse
 import logging
 import time
+from .discovery import tick_discovery
 from .config import Settings
 from .providers import CmcProvider, DemoProvider, CapabilityUnavailable
 from .store import Store, BudgetExceeded, now_iso
@@ -133,6 +134,7 @@ def main():
         tick(settings, store, provider)
         tick_history(settings, store, provider)
         tick_news(settings, store, news_provider, translator)
+        tick_discovery(settings, store)
         if args.once:
             return
         time.sleep(5)

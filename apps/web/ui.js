@@ -1,5 +1,6 @@
 // One outlined SVG family; decorative icons inherit the label of their control.
 const paths={
+ explore:'<circle cx="12" cy="12" r="9"/><path d="m16 8-3 5-5 3 3-5Z"/>',
  market:'<path d="M4 19h16M6 15V9m6 6V5m6 10v-4"/>',
  news:'<rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h8M8 15h5"/>',
  watchlist:'<path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9Z"/>',

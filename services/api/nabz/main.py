@@ -3,6 +3,7 @@ from datetime import datetime, timezone, timedelta
 from typing import Literal
 import json
 import math
+import os
 from fastapi import FastAPI, HTTPException, Query, Request
 from fastapi.responses import JSONResponse
 from .config import Settings
@@ -157,6 +158,18 @@ def create_app(settings=None):
                 translation_status=item['translation_status'] or 'pending')
             return item
         raise HTTPException(404, 'Article not found')
+
+    @app.get('/api/v1/discovery/{category}')
+    def discovery(category: Literal['sentiment', 'defi', 'dex', 'projects']):
+        if category == 'projects' and os.getenv('APP_COMMERCIAL_MODE', 'false') == 'true':
+            return dict(mode=settings.mode, items=[], fetched_at=None, freshness='unavailable')
+        result = store.get('discovery:' + category)
+        if not result:
+            return dict(mode=settings.mode, items=[], fetched_at=None, freshness='unavailable')
+        body, fetched = result
+        intervals = {'sentiment': 21600, 'defi': 3600, 'dex': 900, 'projects': 604800}
+        age = (datetime.now(timezone.utc) - datetime.fromisoformat(fetched)).total_seconds()
+        return dict(**body, mode=settings.mode, fetched_at=fetched, freshness='stale' if age > intervals[category] * 2 else 'fresh')
 
     return app
 

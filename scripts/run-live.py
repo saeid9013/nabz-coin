@@ -13,7 +13,7 @@ def main():
     if not secret_file.exists():
         raise SystemExit('Server key file is missing: .tools/live/secrets.json')
     key = json.loads(secret_file.read_text(encoding='utf-8-sig'))['CMC_API_KEY']
-    env = {**os.environ, 'APP_MODE': 'live', 'CMC_API_KEY': key,
+    env = {**os.environ, 'APP_MODE': 'live', 'DISCOVERY_ENABLED': 'true', 'COINPAPRIKA_ENABLED': os.getenv('COINPAPRIKA_ENABLED', 'true'), 'CMC_API_KEY': key,
            'DATABASE_PATH': str(ROOT / '.tools/live/market.sqlite3'),
            'CMC_METADATA_ENABLED': 'false', 'CMC_INDICES_ENABLED': 'false',
            'CMC_HISTORY_IDS': '', 'NEWS_FEED_URLS': os.getenv('NEWS_FEED_URLS', 'https://mihansignal.com/news/feed/'),
