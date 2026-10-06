@@ -1,0 +1,2469 @@
+{
+  "checked_at": "2026-10-06T05:04:40.551069+00:00",
+  "items": [
+    {
+      "id": 1,
+      "symbol": "BTC",
+      "name": "Bitcoin",
+      "markets": [
+        {
+          "symbol": "BINANCE:BTCUSDT",
+          "exchange": "BINANCE",
+          "base": "BTC",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/BTCUSDT/?exchange=BINANCE",
+          "page_title": "Bitcoin / Tether Price Chart — BTCUSDT — TradingView",
+          "checked_at": "2026-10-06T05:04:04.831661+00:00"
+        },
+        {
+          "symbol": "KRAKEN:BTCUSD",
+          "exchange": "KRAKEN",
+          "base": "BTC",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/BTCUSD/?exchange=KRAKEN",
+          "page_title": "BTC USD — Bitcoin Price and Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:05.294748+00:00"
+        }
+      ]
+    },
+    {
+      "id": 1027,
+      "symbol": "ETH",
+      "name": "Ethereum",
+      "markets": [
+        {
+          "symbol": "BINANCE:ETHUSDT",
+          "exchange": "BINANCE",
+          "base": "ETH",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/ETHUSDT/?exchange=BINANCE",
+          "page_title": "Ethereum / Tether Price Chart — ETHUSDT — TradingView",
+          "checked_at": "2026-10-06T05:04:04.770991+00:00"
+        },
+        {
+          "symbol": "KRAKEN:ETHUSD",
+          "exchange": "KRAKEN",
+          "base": "ETH",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/ETHUSD/?exchange=KRAKEN",
+          "page_title": "ETHUSD — Ethereum Price Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:04.944907+00:00"
+        }
+      ]
+    },
+    {
+      "id": 825,
+      "symbol": "USDT",
+      "name": "Tether USDt",
+      "markets": [
+        {
+          "symbol": "KRAKEN:USDTUSD",
+          "exchange": "KRAKEN",
+          "base": "USDT",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/USDTUSD/?exchange=KRAKEN",
+          "page_title": "Tether Price Chart — USDT USD — TradingView",
+          "checked_at": "2026-10-06T05:04:04.514240+00:00"
+        },
+        {
+          "symbol": "COINBASE:USDTUSD",
+          "exchange": "COINBASE",
+          "base": "USDT",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/USDTUSD/?exchange=COINBASE",
+          "page_title": "Tether Price Chart — USDT USD — TradingView",
+          "checked_at": "2026-10-06T05:04:04.940250+00:00"
+        }
+      ]
+    },
+    {
+      "id": 1839,
+      "symbol": "BNB",
+      "name": "BNB",
+      "markets": [
+        {
+          "symbol": "BINANCE:BNBUSDT",
+          "exchange": "BINANCE",
+          "base": "BNB",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/BNBUSDT/?exchange=BINANCE",
+          "page_title": "Binance Coin / Tether Price Chart — BNBUSDT — TradingView",
+          "checked_at": "2026-10-06T05:04:04.835385+00:00"
+        },
+        {
+          "symbol": "KRAKEN:BNBUSD",
+          "exchange": "KRAKEN",
+          "base": "BNB",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/BNBUSD/?exchange=KRAKEN",
+          "page_title": "Binance Coin Price Chart — BNB USD — TradingView",
+          "checked_at": "2026-10-06T05:04:05.331861+00:00"
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "symbol": "XRP",
+      "name": "XRP",
+      "markets": [
+        {
+          "symbol": "BINANCE:XRPUSDT",
+          "exchange": "BINANCE",
+          "base": "XRP",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/XRPUSDT/?exchange=BINANCE",
+          "page_title": "XRPUSDT — XRP to Tether Price Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:05.373029+00:00"
+        },
+        {
+          "symbol": "KRAKEN:XRPUSD",
+          "exchange": "KRAKEN",
+          "base": "XRP",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/XRPUSD/?exchange=KRAKEN",
+          "page_title": "XRPUSD — XRP Price Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:05.838350+00:00"
+        }
+      ]
+    },
+    {
+      "id": 3408,
+      "symbol": "USDC",
+      "name": "USDC",
+      "markets": [
+        {
+          "symbol": "BINANCE:USDCUSDT",
+          "exchange": "BINANCE",
+          "base": "USDC",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/USDCUSDT/?exchange=BINANCE",
+          "page_title": "USD Coin / TetherUS Price Today — USDCUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:05.356992+00:00"
+        },
+        {
+          "symbol": "KRAKEN:USDCUSD",
+          "exchange": "KRAKEN",
+          "base": "USDC",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/USDCUSD/?exchange=KRAKEN",
+          "page_title": "USDC Chart — USD Coin Price — TradingView",
+          "checked_at": "2026-10-06T05:04:05.840878+00:00"
+        }
+      ]
+    },
+    {
+      "id": 5426,
+      "symbol": "SOL",
+      "name": "Solana",
+      "markets": [
+        {
+          "symbol": "BINANCE:SOLUSDT",
+          "exchange": "BINANCE",
+          "base": "SOL",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/SOLUSDT/?exchange=BINANCE",
+          "page_title": "SOLUSDT Chart — Solana to Tether Price — TradingView",
+          "checked_at": "2026-10-06T05:04:05.691634+00:00"
+        },
+        {
+          "symbol": "KRAKEN:SOLUSD",
+          "exchange": "KRAKEN",
+          "base": "SOL",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/SOLUSD/?exchange=KRAKEN",
+          "page_title": "SOLUSD — Solana to USD Price Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:06.202762+00:00"
+        }
+      ]
+    },
+    {
+      "id": 1958,
+      "symbol": "TRX",
+      "name": "TRON",
+      "markets": [
+        {
+          "symbol": "BINANCE:TRXUSDT",
+          "exchange": "BINANCE",
+          "base": "TRX",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/TRXUSDT/?exchange=BINANCE",
+          "page_title": "TRXUSDT — Tron/Tether Price Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:05.733189+00:00"
+        },
+        {
+          "symbol": "KRAKEN:TRXUSD",
+          "exchange": "KRAKEN",
+          "base": "TRX",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/TRXUSD/?exchange=KRAKEN",
+          "page_title": "Tron Price and Chart — TRX to USD — TradingView",
+          "checked_at": "2026-10-06T05:04:06.263862+00:00"
+        }
+      ]
+    },
+    {
+      "id": 32196,
+      "symbol": "HYPE",
+      "name": "Hyperliquid",
+      "markets": [
+        {
+          "symbol": "BINANCE:HYPEUSDT",
+          "exchange": "BINANCE",
+          "base": "HYPE",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/HYPEUSDT/?exchange=BINANCE",
+          "page_title": "HYPE / TetherUS Price Today — HYPEUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:06.364074+00:00"
+        },
+        {
+          "symbol": "KRAKEN:HYPEUSD",
+          "exchange": "KRAKEN",
+          "base": "HYPE",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/HYPEUSD/?exchange=KRAKEN",
+          "page_title": "HYPE Price Today — HYPEUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:06.837044+00:00"
+        }
+      ]
+    },
+    {
+      "id": 1437,
+      "symbol": "ZEC",
+      "name": "Zcash",
+      "markets": [
+        {
+          "symbol": "BINANCE:ZECUSDT",
+          "exchange": "BINANCE",
+          "base": "ZEC",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/ZECUSDT/?exchange=BINANCE",
+          "page_title": "Zcash / TetherUS Price Today — ZECUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:06.573452+00:00"
+        },
+        {
+          "symbol": "KRAKEN:ZECUSD",
+          "exchange": "KRAKEN",
+          "base": "ZEC",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/ZECUSD/?exchange=KRAKEN",
+          "page_title": "ZECUSD - Zcash Price Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:07.025539+00:00"
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "symbol": "DOGE",
+      "name": "Dogecoin",
+      "markets": [
+        {
+          "symbol": "BINANCE:DOGEUSDT",
+          "exchange": "BINANCE",
+          "base": "DOGE",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/DOGEUSDT/?exchange=BINANCE",
+          "page_title": "Dogecoin / Tether Price Chart — DOGEUSDT — TradingView",
+          "checked_at": "2026-10-06T05:04:06.613783+00:00"
+        },
+        {
+          "symbol": "KRAKEN:DOGEUSD",
+          "exchange": "KRAKEN",
+          "base": "DOGE",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/DOGEUSD/?exchange=KRAKEN",
+          "page_title": "Dogecoin Price and Chart — DOGEUSD — TradingView",
+          "checked_at": "2026-10-06T05:04:07.095228+00:00"
+        }
+      ]
+    },
+    {
+      "id": 328,
+      "symbol": "XMR",
+      "name": "Monero",
+      "markets": [
+        {
+          "symbol": "KRAKEN:XMRUSD",
+          "exchange": "KRAKEN",
+          "base": "XMR",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/XMRUSD/?exchange=KRAKEN",
+          "page_title": "Monero Price and Chart — XMR to USD — TradingView",
+          "checked_at": "2026-10-06T05:04:07.082368+00:00"
+        },
+        {
+          "symbol": "KUCOIN:XMRUSDT",
+          "exchange": "KUCOIN",
+          "base": "XMR",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/XMRUSDT/?exchange=KUCOIN",
+          "page_title": "Monero / Tether Price Today — XMRUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:09.008038+00:00"
+        }
+      ]
+    },
+    {
+      "id": 1975,
+      "symbol": "LINK",
+      "name": "Chainlink",
+      "markets": [
+        {
+          "symbol": "BINANCE:LINKUSDT",
+          "exchange": "BINANCE",
+          "base": "LINK",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/LINKUSDT/?exchange=BINANCE",
+          "page_title": "LINKUSDT — Chainlink/Tether Price Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:07.257565+00:00"
+        },
+        {
+          "symbol": "KRAKEN:LINKUSD",
+          "exchange": "KRAKEN",
+          "base": "LINK",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/LINKUSD/?exchange=KRAKEN",
+          "page_title": "Chainlink Price and Chart — LINK to USD — TradingView",
+          "checked_at": "2026-10-06T05:04:07.724846+00:00"
+        }
+      ]
+    },
+    {
+      "id": 2010,
+      "symbol": "ADA",
+      "name": "Cardano",
+      "markets": [
+        {
+          "symbol": "BINANCE:ADAUSDT",
+          "exchange": "BINANCE",
+          "base": "ADA",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/ADAUSDT/?exchange=BINANCE",
+          "page_title": "Cardano / Tether Price Chart — ADAUSDT — TradingView",
+          "checked_at": "2026-10-06T05:04:07.427862+00:00"
+        },
+        {
+          "symbol": "KRAKEN:ADAUSD",
+          "exchange": "KRAKEN",
+          "base": "ADA",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/ADAUSD/?exchange=KRAKEN",
+          "page_title": "Cardano Price and Chart — ADA to USD — TradingView",
+          "checked_at": "2026-10-06T05:04:07.894109+00:00"
+        }
+      ]
+    },
+    {
+      "id": 3957,
+      "symbol": "LEO",
+      "name": "UNUS SED LEO",
+      "markets": [
+        {
+          "symbol": "OKX:LEOUSDT",
+          "exchange": "OKX",
+          "base": "LEO",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/LEOUSDT/?exchange=OKX",
+          "page_title": "Bitfinex LEO Token/USDT Price Today — LEOUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:08.725670+00:00"
+        },
+        {
+          "symbol": "BITFINEX:LEOUSD",
+          "exchange": "BITFINEX",
+          "base": "LEO",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/LEOUSD/?exchange=BITFINEX",
+          "page_title": "LEO Price Today — LEOUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:10.725560+00:00"
+        }
+      ]
+    },
+    {
+      "id": 512,
+      "symbol": "XLM",
+      "name": "Stellar",
+      "markets": [
+        {
+          "symbol": "BINANCE:XLMUSDT",
+          "exchange": "BINANCE",
+          "base": "XLM",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/XLMUSDT/?exchange=BINANCE",
+          "page_title": "Stellar / TetherUS Price Today — XLMUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:08.135937+00:00"
+        },
+        {
+          "symbol": "KRAKEN:XLMUSD",
+          "exchange": "KRAKEN",
+          "base": "XLM",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/XLMUSD/?exchange=KRAKEN",
+          "page_title": "XLMUSD — Stellar to USD Price Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:08.579836+00:00"
+        }
+      ]
+    },
+    {
+      "id": 6535,
+      "symbol": "NEAR",
+      "name": "NEAR Protocol",
+      "markets": [
+        {
+          "symbol": "BINANCE:NEARUSDT",
+          "exchange": "BINANCE",
+          "base": "NEAR",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/NEARUSDT/?exchange=BINANCE",
+          "page_title": "NEAR / TetherUS Price Today — NEARUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:08.332596+00:00"
+        },
+        {
+          "symbol": "KRAKEN:NEARUSD",
+          "exchange": "KRAKEN",
+          "base": "NEAR",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/NEARUSD/?exchange=KRAKEN",
+          "page_title": "NEARUSD Charts and Quotes — TradingView",
+          "checked_at": "2026-10-06T05:04:08.810502+00:00"
+        }
+      ]
+    },
+    {
+      "id": 1831,
+      "symbol": "BCH",
+      "name": "Bitcoin Cash",
+      "markets": [
+        {
+          "symbol": "BINANCE:BCHUSDT",
+          "exchange": "BINANCE",
+          "base": "BCH",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/BCHUSDT/?exchange=BINANCE",
+          "page_title": "Bitcoin Cash / TetherUS Price Today — BCHUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:08.985008+00:00"
+        },
+        {
+          "symbol": "KRAKEN:BCHUSD",
+          "exchange": "KRAKEN",
+          "base": "BCH",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/BCHUSD/?exchange=KRAKEN",
+          "page_title": "BCH USD - Bitcoin Cash Price Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:09.524379+00:00"
+        }
+      ]
+    },
+    {
+      "id": 7083,
+      "symbol": "UNI",
+      "name": "Uniswap",
+      "markets": [
+        {
+          "symbol": "BINANCE:UNIUSDT",
+          "exchange": "BINANCE",
+          "base": "UNI",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/UNIUSDT/?exchange=BINANCE",
+          "page_title": "UNIUSDT — Uniswap/Tether Price Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:09.285006+00:00"
+        },
+        {
+          "symbol": "KRAKEN:UNIUSD",
+          "exchange": "KRAKEN",
+          "base": "UNI",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/UNIUSD/?exchange=KRAKEN",
+          "page_title": "Uniswap Price and Chart — UNI to USD — TradingView",
+          "checked_at": "2026-10-06T05:04:09.743665+00:00"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "symbol": "LTC",
+      "name": "Litecoin",
+      "markets": [
+        {
+          "symbol": "BINANCE:LTCUSDT",
+          "exchange": "BINANCE",
+          "base": "LTC",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/LTCUSDT/?exchange=BINANCE",
+          "page_title": "Litecoin / TetherUS Price Today — LTCUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:09.401389+00:00"
+        },
+        {
+          "symbol": "KRAKEN:LTCUSD",
+          "exchange": "KRAKEN",
+          "base": "LTC",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/LTCUSD/?exchange=KRAKEN",
+          "page_title": "LTCUSD — Litecoin Price and Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:09.931749+00:00"
+        }
+      ]
+    },
+    {
+      "id": 37263,
+      "symbol": "CC",
+      "name": "Canton",
+      "markets": [
+        {
+          "symbol": "KRAKEN:CCUSD",
+          "exchange": "KRAKEN",
+          "base": "CC",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/CCUSD/?exchange=KRAKEN",
+          "page_title": "CC Price Today — CCUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:10.403665+00:00"
+        },
+        {
+          "symbol": "OKX:CCUSDT",
+          "exchange": "OKX",
+          "base": "CC",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/CCUSDT/?exchange=OKX",
+          "page_title": "Canton Coin/USDT Price Today — CCUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:11.518761+00:00"
+        }
+      ]
+    },
+    {
+      "id": 5805,
+      "symbol": "AVAX",
+      "name": "Avalanche",
+      "markets": [
+        {
+          "symbol": "BINANCE:AVAXUSDT",
+          "exchange": "BINANCE",
+          "base": "AVAX",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/AVAXUSDT/?exchange=BINANCE",
+          "page_title": "Avalanche / Tether Price Chart — AVAXUSDT — TradingView",
+          "checked_at": "2026-10-06T05:04:10.164123+00:00"
+        },
+        {
+          "symbol": "KRAKEN:AVAXUSD",
+          "exchange": "KRAKEN",
+          "base": "AVAX",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/AVAXUSD/?exchange=KRAKEN",
+          "page_title": "Avalanche Price Chart — AVAX USD — TradingView",
+          "checked_at": "2026-10-06T05:04:10.644059+00:00"
+        }
+      ]
+    },
+    {
+      "id": 29470,
+      "symbol": "USDe",
+      "name": "Ethena USDe",
+      "markets": [
+        {
+          "symbol": "BINANCE:USDEUSDT",
+          "exchange": "BINANCE",
+          "base": "USDE",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/USDEUSDT/?exchange=BINANCE",
+          "page_title": "USDE / TetherUS Price Today — USDEUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:10.580381+00:00"
+        },
+        {
+          "symbol": "KRAKEN:USDEUSD",
+          "exchange": "KRAKEN",
+          "base": "USDE",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/USDEUSD/?exchange=KRAKEN",
+          "page_title": "USDE Price Today — USDEUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:11.044116+00:00"
+        }
+      ]
+    },
+    {
+      "id": 20947,
+      "symbol": "SUI",
+      "name": "Sui",
+      "markets": [
+        {
+          "symbol": "BINANCE:SUIUSDT",
+          "exchange": "BINANCE",
+          "base": "SUI",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/SUIUSDT/?exchange=BINANCE",
+          "page_title": "SUI / TetherUS Price Today — SUIUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:11.386535+00:00"
+        },
+        {
+          "symbol": "KRAKEN:SUIUSD",
+          "exchange": "KRAKEN",
+          "base": "SUI",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/SUIUSD/?exchange=KRAKEN",
+          "page_title": "SUI Price, Chart, News — SUI USD — TradingView",
+          "checked_at": "2026-10-06T05:04:11.860360+00:00"
+        }
+      ]
+    },
+    {
+      "id": 4943,
+      "symbol": "DAI",
+      "name": "Dai",
+      "markets": [
+        {
+          "symbol": "KRAKEN:DAIUSD",
+          "exchange": "KRAKEN",
+          "base": "DAI",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/DAIUSD/?exchange=KRAKEN",
+          "page_title": "DAI Price Today — DAIUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:11.693270+00:00"
+        }
+      ]
+    },
+    {
+      "id": 4642,
+      "symbol": "HBAR",
+      "name": "Hedera",
+      "markets": [
+        {
+          "symbol": "BINANCE:HBARUSDT",
+          "exchange": "BINANCE",
+          "base": "HBAR",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/HBARUSDT/?exchange=BINANCE",
+          "page_title": "Hedera Hashgraph / TetherUS Price Today — HBARUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:11.445133+00:00"
+        },
+        {
+          "symbol": "KRAKEN:HBARUSD",
+          "exchange": "KRAKEN",
+          "base": "HBAR",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/HBARUSD/?exchange=KRAKEN",
+          "page_title": "HBAR Price Today — HBARUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:11.923584+00:00"
+        }
+      ]
+    },
+    {
+      "id": 36148,
+      "symbol": "USD1",
+      "name": "World Liberty Financial USD",
+      "markets": [
+        {
+          "symbol": "BINANCE:USD1USDT",
+          "exchange": "BINANCE",
+          "base": "USD1",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/USD1USDT/?exchange=BINANCE",
+          "page_title": "USD1 / TetherUS Price Today — USD1USDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:12.500776+00:00"
+        },
+        {
+          "symbol": "KRAKEN:USD1USD",
+          "exchange": "KRAKEN",
+          "base": "USD1",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/USD1USD/?exchange=KRAKEN",
+          "page_title": "USD1 Price Today — USD1USD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:13.198469+00:00"
+        }
+      ]
+    },
+    {
+      "id": 11419,
+      "symbol": "GRAM",
+      "name": "Gram (prev. Toncoin)",
+      "markets": [
+        {
+          "symbol": "BINANCE:GRAMUSDT",
+          "exchange": "BINANCE",
+          "base": "GRAM",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/GRAMUSDT/?exchange=BINANCE",
+          "page_title": "GRAM / TetherUS Price Today — GRAMUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:12.372765+00:00"
+        },
+        {
+          "symbol": "OKX:GRAMUSDT",
+          "exchange": "OKX",
+          "base": "GRAM",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/GRAMUSDT/?exchange=OKX",
+          "page_title": "Gram/USDT Price Today — GRAMUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:13.896573+00:00"
+        }
+      ]
+    },
+    {
+      "id": 22974,
+      "symbol": "TAO",
+      "name": "Bittensor",
+      "markets": [
+        {
+          "symbol": "BINANCE:TAOUSDT",
+          "exchange": "BINANCE",
+          "base": "TAO",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/TAOUSDT/?exchange=BINANCE",
+          "page_title": "TAO / TetherUS Price Today — TAOUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:12.457800+00:00"
+        },
+        {
+          "symbol": "KRAKEN:TAOUSD",
+          "exchange": "KRAKEN",
+          "base": "TAO",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/TAOUSD/?exchange=KRAKEN",
+          "page_title": "TAO Price Today — TAOUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:12.974713+00:00"
+        }
+      ]
+    },
+    {
+      "id": 5994,
+      "symbol": "SHIB",
+      "name": "Shiba Inu",
+      "markets": [
+        {
+          "symbol": "BINANCE:SHIBUSDT",
+          "exchange": "BINANCE",
+          "base": "SHIB",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/SHIBUSDT/?exchange=BINANCE",
+          "page_title": "Shiba Inu / Tether Price Chart — SHIB USDT — TradingView",
+          "checked_at": "2026-10-06T05:04:13.447883+00:00"
+        },
+        {
+          "symbol": "KRAKEN:SHIBUSD",
+          "exchange": "KRAKEN",
+          "base": "SHIB",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/SHIBUSD/?exchange=KRAKEN",
+          "page_title": "Shiba Inu Price — SHIB to USD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:13.939467+00:00"
+        }
+      ]
+    },
+    {
+      "id": 3635,
+      "symbol": "CRO",
+      "name": "Cronos",
+      "markets": [
+        {
+          "symbol": "KRAKEN:CROUSD",
+          "exchange": "KRAKEN",
+          "base": "CRO",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/CROUSD/?exchange=KRAKEN",
+          "page_title": "CRO Price Today — CROUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:14.138665+00:00"
+        },
+        {
+          "symbol": "COINBASE:CROUSD",
+          "exchange": "COINBASE",
+          "base": "CRO",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/CROUSD/?exchange=COINBASE",
+          "page_title": "Cronos Price Today — CROUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:14.600620+00:00"
+        }
+      ]
+    },
+    {
+      "id": 30171,
+      "symbol": "ENA",
+      "name": "Ethena",
+      "markets": [
+        {
+          "symbol": "BINANCE:ENAUSDT",
+          "exchange": "BINANCE",
+          "base": "ENA",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/ENAUSDT/?exchange=BINANCE",
+          "page_title": "ENA USDT — Ethena Price Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:14.302138+00:00"
+        },
+        {
+          "symbol": "KRAKEN:ENAUSD",
+          "exchange": "KRAKEN",
+          "base": "ENA",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/ENAUSD/?exchange=KRAKEN",
+          "page_title": "ENA Price Today — ENAUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:14.767985+00:00"
+        }
+      ]
+    },
+    {
+      "id": 33793,
+      "symbol": "USDG",
+      "name": "Global Dollar",
+      "markets": [
+        {
+          "symbol": "KRAKEN:USDGUSD",
+          "exchange": "KRAKEN",
+          "base": "USDG",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/USDGUSD/?exchange=KRAKEN",
+          "page_title": "USDG Price Today — USDGUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:14.735462+00:00"
+        },
+        {
+          "symbol": "OKX:USDGUSDT",
+          "exchange": "OKX",
+          "base": "USDG",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/USDGUSDT/?exchange=OKX",
+          "page_title": "USDG/USDT Price Today — USDGUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:15.618221+00:00"
+        }
+      ]
+    },
+    {
+      "id": 3155,
+      "symbol": "QNT",
+      "name": "Quant",
+      "markets": [
+        {
+          "symbol": "BINANCE:QNTUSDT",
+          "exchange": "BINANCE",
+          "base": "QNT",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/QNTUSDT/?exchange=BINANCE",
+          "page_title": "QNT / TetherUS Price Today — QNTUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:15.032851+00:00"
+        },
+        {
+          "symbol": "KRAKEN:QNTUSD",
+          "exchange": "KRAKEN",
+          "base": "QNT",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/QNTUSD/?exchange=KRAKEN",
+          "page_title": "QNT Price Today — QNTUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:15.459641+00:00"
+        }
+      ]
+    },
+    {
+      "id": 36507,
+      "symbol": "PUMP",
+      "name": "Pump.fun",
+      "markets": [
+        {
+          "symbol": "BINANCE:PUMPUSDT",
+          "exchange": "BINANCE",
+          "base": "PUMP",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/PUMPUSDT/?exchange=BINANCE",
+          "page_title": "PUMP / TetherUS Price Today — PUMPUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:15.176438+00:00"
+        },
+        {
+          "symbol": "KRAKEN:PUMPUSD",
+          "exchange": "KRAKEN",
+          "base": "PUMP",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/PUMPUSD/?exchange=KRAKEN",
+          "page_title": "PUMP Price Today — PUMPUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:15.699260+00:00"
+        }
+      ]
+    },
+    {
+      "id": 27772,
+      "symbol": "PYUSD",
+      "name": "PayPal USD",
+      "markets": [
+        {
+          "symbol": "KRAKEN:PYUSDUSD",
+          "exchange": "KRAKEN",
+          "base": "PYUSD",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/PYUSDUSD/?exchange=KRAKEN",
+          "page_title": "PYUSD Price Today — PYUSDUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:15.682370+00:00"
+        },
+        {
+          "symbol": "OKX:PYUSDUSDT",
+          "exchange": "OKX",
+          "base": "PYUSD",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/PYUSDUSDT/?exchange=OKX",
+          "page_title": "PayPal USD/USDT Price Today — PYUSDUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:16.457776+00:00"
+        }
+      ]
+    },
+    {
+      "id": 5176,
+      "symbol": "XAUt",
+      "name": "Tether Gold",
+      "markets": [
+        {
+          "symbol": "BINANCE:XAUTUSDT",
+          "exchange": "BINANCE",
+          "base": "XAUT",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/XAUTUSDT/?exchange=BINANCE",
+          "page_title": "XAUT / TetherUS Price Today — XAUTUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:15.934490+00:00"
+        },
+        {
+          "symbol": "KRAKEN:XAUTUSD",
+          "exchange": "KRAKEN",
+          "base": "XAUT",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/XAUTUSD/?exchange=KRAKEN",
+          "page_title": "AUT Price Today — XAUTUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:16.394785+00:00"
+        }
+      ]
+    },
+    {
+      "id": 7278,
+      "symbol": "AAVE",
+      "name": "Aave",
+      "markets": [
+        {
+          "symbol": "BINANCE:AAVEUSDT",
+          "exchange": "BINANCE",
+          "base": "AAVE",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/AAVEUSDT/?exchange=BINANCE",
+          "page_title": "AAVE / TetherUS Price Today — AAVEUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:16.049354+00:00"
+        },
+        {
+          "symbol": "KRAKEN:AAVEUSD",
+          "exchange": "KRAKEN",
+          "base": "AAVE",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/AAVEUSD/?exchange=KRAKEN",
+          "page_title": "Aave Price Today — AAVEUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:16.480829+00:00"
+        }
+      ]
+    },
+    {
+      "id": 3897,
+      "symbol": "OKB",
+      "name": "OKB",
+      "markets": [
+        {
+          "symbol": "KRAKEN:OKBUSD",
+          "exchange": "KRAKEN",
+          "base": "OKB",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/OKBUSD/?exchange=KRAKEN",
+          "page_title": "OKB Price Today — OKBUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:16.798060+00:00"
+        },
+        {
+          "symbol": "OKX:OKBUSDT",
+          "exchange": "OKX",
+          "base": "OKB",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/OKBUSDT/?exchange=OKX",
+          "page_title": "OKB/USDT Price Today — OKBUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:17.655337+00:00"
+        }
+      ]
+    },
+    {
+      "id": 34387,
+      "symbol": "RLUSD",
+      "name": "Ripple USD",
+      "markets": [
+        {
+          "symbol": "BINANCE:RLUSDUSDT",
+          "exchange": "BINANCE",
+          "base": "RLUSD",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/RLUSDUSDT/?exchange=BINANCE",
+          "page_title": "RLUSD / TetherUS Price Today — RLUSDUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:16.940463+00:00"
+        },
+        {
+          "symbol": "KRAKEN:RLUSDUSD",
+          "exchange": "KRAKEN",
+          "base": "RLUSD",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/RLUSDUSD/?exchange=KRAKEN",
+          "page_title": "RLUSD Price Today — RLUSDUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:17.449043+00:00"
+        }
+      ]
+    },
+    {
+      "id": 21159,
+      "symbol": "ONDO",
+      "name": "Ondo",
+      "markets": [
+        {
+          "symbol": "BINANCE:ONDOUSDT",
+          "exchange": "BINANCE",
+          "base": "ONDO",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/ONDOUSDT/?exchange=BINANCE",
+          "page_title": "ONDO / TetherUS Price Today — ONDOUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:16.942131+00:00"
+        },
+        {
+          "symbol": "KRAKEN:ONDOUSD",
+          "exchange": "KRAKEN",
+          "base": "ONDO",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/ONDOUSD/?exchange=KRAKEN",
+          "page_title": "ONDO Price Today — ONDOUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:17.405998+00:00"
+        }
+      ]
+    },
+    {
+      "id": 35491,
+      "symbol": "M",
+      "name": "MemeCore",
+      "markets": [
+        {
+          "symbol": "KRAKEN:MUSD",
+          "exchange": "KRAKEN",
+          "base": "M",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/MUSD/?exchange=KRAKEN",
+          "page_title": "M Price Today — MUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:17.564959+00:00"
+        },
+        {
+          "symbol": "MEXC:MUSDT",
+          "exchange": "MEXC",
+          "base": "M",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/MUSDT/?exchange=MEXC",
+          "page_title": "MemeCore / USDT Price Today — MUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:20.853841+00:00"
+        }
+      ]
+    },
+    {
+      "id": 13502,
+      "symbol": "WLD",
+      "name": "Worldcoin",
+      "markets": [
+        {
+          "symbol": "BINANCE:WLDUSDT",
+          "exchange": "BINANCE",
+          "base": "WLD",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/WLDUSDT/?exchange=BINANCE",
+          "page_title": "WLD / TetherUS Price Today — WLDUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:17.820325+00:00"
+        },
+        {
+          "symbol": "KRAKEN:WLDUSD",
+          "exchange": "KRAKEN",
+          "base": "WLD",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/WLDUSD/?exchange=KRAKEN",
+          "page_title": "WLD Price Today — WLDUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:18.269157+00:00"
+        }
+      ]
+    },
+    {
+      "id": 27075,
+      "symbol": "MNT",
+      "name": "Mantle",
+      "markets": [
+        {
+          "symbol": "KRAKEN:MNTUSD",
+          "exchange": "KRAKEN",
+          "base": "MNT",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/MNTUSD/?exchange=KRAKEN",
+          "page_title": "MNT Price Today — MNTUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:18.345858+00:00"
+        },
+        {
+          "symbol": "BYBIT:MNTUSDT",
+          "exchange": "BYBIT",
+          "base": "MNT",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/MNTUSDT/?exchange=BYBIT",
+          "page_title": "MNTUSDT SPOT Price Today — MNTUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:19.560204+00:00"
+        }
+      ]
+    },
+    {
+      "id": 6636,
+      "symbol": "DOT",
+      "name": "Polkadot",
+      "markets": [
+        {
+          "symbol": "BINANCE:DOTUSDT",
+          "exchange": "BINANCE",
+          "base": "DOT",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/DOTUSDT/?exchange=BINANCE",
+          "page_title": "DOTUSDT — Polkadot/Tether Price Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:18.071894+00:00"
+        },
+        {
+          "symbol": "KRAKEN:DOTUSD",
+          "exchange": "KRAKEN",
+          "base": "DOT",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/DOTUSD/?exchange=KRAKEN",
+          "page_title": "Polkadot Price and Chart — DOT to USD — TradingView",
+          "checked_at": "2026-10-06T05:04:18.623631+00:00"
+        }
+      ]
+    },
+    {
+      "id": 33038,
+      "symbol": "SKY",
+      "name": "Sky",
+      "markets": [
+        {
+          "symbol": "BINANCE:SKYUSDT",
+          "exchange": "BINANCE",
+          "base": "SKY",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/SKYUSDT/?exchange=BINANCE",
+          "page_title": "Skycoin / TetherUS Price Today — SKYUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:18.656039+00:00"
+        },
+        {
+          "symbol": "KRAKEN:SKYUSD",
+          "exchange": "KRAKEN",
+          "base": "SKY",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/SKYUSD/?exchange=KRAKEN",
+          "page_title": "SKY Price Today — SKYUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:19.170393+00:00"
+        }
+      ]
+    },
+    {
+      "id": 36341,
+      "symbol": "ASTER",
+      "name": "Aster",
+      "markets": [
+        {
+          "symbol": "BINANCE:ASTERUSDT",
+          "exchange": "BINANCE",
+          "base": "ASTER",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/ASTERUSDT/?exchange=BINANCE",
+          "page_title": "ASTER / TetherUS Price Today — ASTERUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:19.044373+00:00"
+        },
+        {
+          "symbol": "KRAKEN:ASTERUSD",
+          "exchange": "KRAKEN",
+          "base": "ASTER",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/ASTERUSD/?exchange=KRAKEN",
+          "page_title": "ASTER Price Today — ASTERUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:19.477072+00:00"
+        }
+      ]
+    },
+    {
+      "id": 8916,
+      "symbol": "ICP",
+      "name": "Internet Computer",
+      "markets": [
+        {
+          "symbol": "BINANCE:ICPUSDT",
+          "exchange": "BINANCE",
+          "base": "ICP",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/ICPUSDT/?exchange=BINANCE",
+          "page_title": "ICP / TetherUS Price Today — ICPUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:19.580320+00:00"
+        },
+        {
+          "symbol": "KRAKEN:ICPUSD",
+          "exchange": "KRAKEN",
+          "base": "ICP",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/ICPUSD/?exchange=KRAKEN",
+          "page_title": "ICP Price Today — ICPUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:20.020656+00:00"
+        }
+      ]
+    },
+    {
+      "id": 4705,
+      "symbol": "PAXG",
+      "name": "PAX Gold",
+      "markets": [
+        {
+          "symbol": "BINANCE:PAXGUSDT",
+          "exchange": "BINANCE",
+          "base": "PAXG",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/PAXGUSDT/?exchange=BINANCE",
+          "page_title": "PAX Gold / TetherUS Price Today — PAXGUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:19.897448+00:00"
+        },
+        {
+          "symbol": "KRAKEN:PAXGUSD",
+          "exchange": "KRAKEN",
+          "base": "PAXG",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/PAXGUSD/?exchange=KRAKEN",
+          "page_title": "PAX Gold Price Today — PAXGUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:20.379557+00:00"
+        }
+      ]
+    },
+    {
+      "id": 33251,
+      "symbol": "WLFI",
+      "name": "World Liberty Financial",
+      "markets": [
+        {
+          "symbol": "BINANCE:WLFIUSDT",
+          "exchange": "BINANCE",
+          "base": "WLFI",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/WLFIUSDT/?exchange=BINANCE",
+          "page_title": "WLFI / TetherUS Price Today — WLFIUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:19.953190+00:00"
+        },
+        {
+          "symbol": "KRAKEN:WLFIUSD",
+          "exchange": "KRAKEN",
+          "base": "WLFI",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/WLFIUSD/?exchange=KRAKEN",
+          "page_title": "WLFI Price Today — WLFIUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:20.460732+00:00"
+        }
+      ]
+    },
+    {
+      "id": 24478,
+      "symbol": "PEPE",
+      "name": "Pepe",
+      "markets": [
+        {
+          "symbol": "BINANCE:PEPEUSDT",
+          "exchange": "BINANCE",
+          "base": "PEPE",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/PEPEUSDT/?exchange=BINANCE",
+          "page_title": "Pepe Coin / USDT — PEPE USDT Price Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:20.467544+00:00"
+        },
+        {
+          "symbol": "KRAKEN:PEPEUSD",
+          "exchange": "KRAKEN",
+          "base": "PEPE",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/PEPEUSD/?exchange=KRAKEN",
+          "page_title": "PEPE Price Today — PEPEUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:20.885934+00:00"
+        }
+      ]
+    },
+    {
+      "id": 19891,
+      "symbol": "USDD",
+      "name": "USDD",
+      "markets": [
+        {
+          "symbol": "KRAKEN:USDDUSD",
+          "exchange": "KRAKEN",
+          "base": "USDD",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/USDDUSD/?exchange=KRAKEN",
+          "page_title": "USDD Price Today — USDDUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:21.161042+00:00"
+        },
+        {
+          "symbol": "KUCOIN:USDDUSDT",
+          "exchange": "KUCOIN",
+          "base": "USDD",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/USDDUSDT/?exchange=KUCOIN",
+          "page_title": "Decentralized USD / Tether Price Today — USDDUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:22.873364+00:00"
+        }
+      ]
+    },
+    {
+      "id": 39120,
+      "symbol": "U",
+      "name": "United Stables",
+      "markets": [
+        {
+          "symbol": "BINANCE:UUSDT",
+          "exchange": "BINANCE",
+          "base": "U",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/UUSDT/?exchange=BINANCE",
+          "page_title": "U / TetherUS Price Today — UUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:20.892523+00:00"
+        },
+        {
+          "symbol": "KRAKEN:UUSD",
+          "exchange": "KRAKEN",
+          "base": "U",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/UUSD/?exchange=KRAKEN",
+          "page_title": "U Price Today — UUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:21.344207+00:00"
+        }
+      ]
+    },
+    {
+      "id": 34104,
+      "symbol": "MORPHO",
+      "name": "Morpho",
+      "markets": [
+        {
+          "symbol": "BINANCE:MORPHOUSDT",
+          "exchange": "BINANCE",
+          "base": "MORPHO",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/MORPHOUSDT/?exchange=BINANCE",
+          "page_title": "MORPHO / TetherUS Price Today — MORPHOUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:21.254201+00:00"
+        },
+        {
+          "symbol": "KRAKEN:MORPHOUSD",
+          "exchange": "KRAKEN",
+          "base": "MORPHO",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/MORPHOUSD/?exchange=KRAKEN",
+          "page_title": "MORPHO Price Today — MORPHOUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:21.746606+00:00"
+        }
+      ]
+    },
+    {
+      "id": 1321,
+      "symbol": "ETC",
+      "name": "Ethereum Classic",
+      "markets": [
+        {
+          "symbol": "BINANCE:ETCUSDT",
+          "exchange": "BINANCE",
+          "base": "ETC",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/ETCUSDT/?exchange=BINANCE",
+          "page_title": "Ethereum Classic / TetherUS Price Today — ETCUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:21.406197+00:00"
+        },
+        {
+          "symbol": "KRAKEN:ETCUSD",
+          "exchange": "KRAKEN",
+          "base": "ETC",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/ETCUSD/?exchange=KRAKEN",
+          "page_title": "ETCUSD - Ethereum Classic Price Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:21.882029+00:00"
+        }
+      ]
+    },
+    {
+      "id": 11092,
+      "symbol": "BGB",
+      "name": "Bitget Token",
+      "markets": [
+        {
+          "symbol": "KRAKEN:BGBUSD",
+          "exchange": "KRAKEN",
+          "base": "BGB",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/BGBUSD/?exchange=KRAKEN",
+          "page_title": "BGB Price Today — BGBUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:22.152186+00:00"
+        },
+        {
+          "symbol": "MEXC:BGBUSDT",
+          "exchange": "MEXC",
+          "base": "BGB",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/BGBUSDT/?exchange=MEXC",
+          "page_title": "Bitget Token / USDT Price Today — BGBUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:24.955938+00:00"
+        }
+      ]
+    },
+    {
+      "id": 35509,
+      "symbol": "VVV",
+      "name": "Venice Token",
+      "markets": [
+        {
+          "symbol": "KRAKEN:VVVUSD",
+          "exchange": "KRAKEN",
+          "base": "VVV",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/VVVUSD/?exchange=KRAKEN",
+          "page_title": "VVV Price Today — VVVUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:22.557736+00:00"
+        },
+        {
+          "symbol": "COINBASE:VVVUSD",
+          "exchange": "COINBASE",
+          "base": "VVV",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/VVVUSD/?exchange=COINBASE",
+          "page_title": "Venice Token Price Today — VVVUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:23.023532+00:00"
+        }
+      ]
+    },
+    {
+      "id": 11841,
+      "symbol": "ARB",
+      "name": "Arbitrum",
+      "markets": [
+        {
+          "symbol": "BINANCE:ARBUSDT",
+          "exchange": "BINANCE",
+          "base": "ARB",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/ARBUSDT/?exchange=BINANCE",
+          "page_title": "ARB / TetherUS Price Today — ARBUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:22.296494+00:00"
+        },
+        {
+          "symbol": "KRAKEN:ARBUSD",
+          "exchange": "KRAKEN",
+          "base": "ARB",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/ARBUSD/?exchange=KRAKEN",
+          "page_title": "ARB Price Today — ARBUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:22.759114+00:00"
+        }
+      ]
+    },
+    {
+      "id": 20396,
+      "symbol": "KAS",
+      "name": "Kaspa",
+      "markets": [
+        {
+          "symbol": "KRAKEN:KASUSD",
+          "exchange": "KRAKEN",
+          "base": "KAS",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/KASUSD/?exchange=KRAKEN",
+          "page_title": "KAS Price Today — KASUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:23.659924+00:00"
+        },
+        {
+          "symbol": "BYBIT:KASUSDT",
+          "exchange": "BYBIT",
+          "base": "KAS",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/KASUSDT/?exchange=BYBIT",
+          "page_title": "KASUSDT SPOT Price Today — KASUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:24.906972+00:00"
+        }
+      ]
+    },
+    {
+      "id": 4269,
+      "symbol": "GT",
+      "name": "GateToken",
+      "markets": [
+        {
+          "symbol": "GATE:GTUSDT",
+          "exchange": "GATE",
+          "base": "GT",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/GTUSDT/?exchange=GATE",
+          "page_title": "GateToken/Tether Price Today — GTUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:05:40.917196+00:00"
+        }
+      ]
+    },
+    {
+      "id": 29210,
+      "symbol": "JUP",
+      "name": "Jupiter",
+      "markets": [
+        {
+          "symbol": "BINANCE:JUPUSDT",
+          "exchange": "BINANCE",
+          "base": "JUP",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/JUPUSDT/?exchange=BINANCE",
+          "page_title": "JUP / TetherUS Price Today — JUPUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:23.442542+00:00"
+        },
+        {
+          "symbol": "KRAKEN:JUPUSD",
+          "exchange": "KRAKEN",
+          "base": "JUP",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/JUPUSD/?exchange=KRAKEN",
+          "page_title": "JUP Price Today — JUPUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:23.961574+00:00"
+        }
+      ]
+    },
+    {
+      "id": 28321,
+      "symbol": "POL",
+      "name": "Polygon (prev. MATIC)",
+      "markets": [
+        {
+          "symbol": "BINANCE:POLUSDT",
+          "exchange": "BINANCE",
+          "base": "POL",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/POLUSDT/?exchange=BINANCE",
+          "page_title": "POL / TetherUS Price Today — POLUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:24.400061+00:00"
+        },
+        {
+          "symbol": "KRAKEN:POLUSD",
+          "exchange": "KRAKEN",
+          "base": "POL",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/POLUSD/?exchange=KRAKEN",
+          "page_title": "POL Price Today — POLUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:24.886213+00:00"
+        }
+      ]
+    },
+    {
+      "id": 4030,
+      "symbol": "ALGO",
+      "name": "Algorand",
+      "markets": [
+        {
+          "symbol": "BINANCE:ALGOUSDT",
+          "exchange": "BINANCE",
+          "base": "ALGO",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/ALGOUSDT/?exchange=BINANCE",
+          "page_title": "ALGO USDT — Algorand to Tether Price and Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:25.287194+00:00"
+        },
+        {
+          "symbol": "KRAKEN:ALGOUSD",
+          "exchange": "KRAKEN",
+          "base": "ALGO",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/ALGOUSD/?exchange=KRAKEN",
+          "page_title": "ALGOUSD Charts and Quotes — TradingView",
+          "checked_at": "2026-10-06T05:04:25.834514+00:00"
+        }
+      ]
+    },
+    {
+      "id": 5488,
+      "symbol": "JST",
+      "name": "JUST",
+      "markets": [
+        {
+          "symbol": "BINANCE:JSTUSDT",
+          "exchange": "BINANCE",
+          "base": "JST",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/JSTUSDT/?exchange=BINANCE",
+          "page_title": "JST / TetherUS Price Today — JSTUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:25.411004+00:00"
+        },
+        {
+          "symbol": "KRAKEN:JSTUSD",
+          "exchange": "KRAKEN",
+          "base": "JST",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/JSTUSD/?exchange=KRAKEN",
+          "page_title": "JST Price Today — JSTUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:25.855453+00:00"
+        }
+      ]
+    },
+    {
+      "id": 5690,
+      "symbol": "RENDER",
+      "name": "Render",
+      "markets": [
+        {
+          "symbol": "BINANCE:RENDERUSDT",
+          "exchange": "BINANCE",
+          "base": "RENDER",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/RENDERUSDT/?exchange=BINANCE",
+          "page_title": "RENDER / TetherUS Price Today — RENDERUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:25.433322+00:00"
+        },
+        {
+          "symbol": "KRAKEN:RENDERUSD",
+          "exchange": "KRAKEN",
+          "base": "RENDER",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/RENDERUSD/?exchange=KRAKEN",
+          "page_title": "RENDER Price Today — RENDERUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:25.911626+00:00"
+        }
+      ]
+    },
+    {
+      "id": 2087,
+      "symbol": "KCS",
+      "name": "KuCoin Token",
+      "markets": [
+        {
+          "symbol": "BYBIT:KCSUSDT",
+          "exchange": "BYBIT",
+          "base": "KCS",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/KCSUSDT/?exchange=BYBIT",
+          "page_title": "KCSUSDT SPOT Price Today — KCSUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:28.542246+00:00"
+        },
+        {
+          "symbol": "KUCOIN:KCSUSDT",
+          "exchange": "KUCOIN",
+          "base": "KCS",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/KCSUSDT/?exchange=KUCOIN",
+          "page_title": "KuCoin Token / Tether Price Today — KCSUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:28.929117+00:00"
+        }
+      ]
+    },
+    {
+      "id": 39125,
+      "symbol": "LIT",
+      "name": "Lighter",
+      "markets": [
+        {
+          "symbol": "KRAKEN:LITUSD",
+          "exchange": "KRAKEN",
+          "base": "LIT",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/LITUSD/?exchange=KRAKEN",
+          "page_title": "LIT Price Today — LITUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:26.914382+00:00"
+        },
+        {
+          "symbol": "OKX:LITUSDT",
+          "exchange": "OKX",
+          "base": "LIT",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/LITUSDT/?exchange=OKX",
+          "page_title": "Lighter/USDT Price Today — LITUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:27.764838+00:00"
+        }
+      ]
+    },
+    {
+      "id": 35697,
+      "symbol": "PI",
+      "name": "Pi",
+      "markets": [
+        {
+          "symbol": "KRAKEN:PIUSD",
+          "exchange": "KRAKEN",
+          "base": "PI",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/PIUSD/?exchange=KRAKEN",
+          "page_title": "PI Price Today — PIUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:26.698314+00:00"
+        },
+        {
+          "symbol": "OKX:PIUSDT",
+          "exchange": "OKX",
+          "base": "PI",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/PIUSDT/?exchange=OKX",
+          "page_title": "PI Coin — PI USDT Charts and Quotes — TradingView",
+          "checked_at": "2026-10-06T05:04:27.567255+00:00"
+        }
+      ]
+    },
+    {
+      "id": 2280,
+      "symbol": "FIL",
+      "name": "Filecoin",
+      "markets": [
+        {
+          "symbol": "BINANCE:FILUSDT",
+          "exchange": "BINANCE",
+          "base": "FIL",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/FILUSDT/?exchange=BINANCE",
+          "page_title": "FIL / TetherUS Price Today — FILUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:27.343196+00:00"
+        },
+        {
+          "symbol": "KRAKEN:FILUSD",
+          "exchange": "KRAKEN",
+          "base": "FIL",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/FILUSD/?exchange=KRAKEN",
+          "page_title": "Filecoin Price Today — FILUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:27.768901+00:00"
+        }
+      ]
+    },
+    {
+      "id": 3794,
+      "symbol": "ATOM",
+      "name": "Cosmos",
+      "markets": [
+        {
+          "symbol": "BINANCE:ATOMUSDT",
+          "exchange": "BINANCE",
+          "base": "ATOM",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/ATOMUSDT/?exchange=BINANCE",
+          "page_title": "ATOM USDT — Cosmos to Tether Price and Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:28.157296+00:00"
+        },
+        {
+          "symbol": "KRAKEN:ATOMUSD",
+          "exchange": "KRAKEN",
+          "base": "ATOM",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/ATOMUSD/?exchange=KRAKEN",
+          "page_title": "ATOMUSD Charts and Quotes — TradingView",
+          "checked_at": "2026-10-06T05:04:28.574061+00:00"
+        }
+      ]
+    },
+    {
+      "id": 26997,
+      "symbol": "ZRO",
+      "name": "LayerZero",
+      "markets": [
+        {
+          "symbol": "BINANCE:ZROUSDT",
+          "exchange": "BINANCE",
+          "base": "ZRO",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/ZROUSDT/?exchange=BINANCE",
+          "page_title": "ZRO / TetherUS Price Today — ZROUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:28.170386+00:00"
+        },
+        {
+          "symbol": "KRAKEN:ZROUSD",
+          "exchange": "KRAKEN",
+          "base": "ZRO",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/ZROUSD/?exchange=KRAKEN",
+          "page_title": "ZRO Price Today — ZROUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:28.615636+00:00"
+        }
+      ]
+    },
+    {
+      "id": 29270,
+      "symbol": "AERO",
+      "name": "Aerodrome Finance",
+      "markets": [
+        {
+          "symbol": "BINANCE:AEROUSDT",
+          "exchange": "BINANCE",
+          "base": "AERO",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/AEROUSDT/?exchange=BINANCE",
+          "page_title": "AERO / TetherUS Price Today — AEROUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:28.459361+00:00"
+        },
+        {
+          "symbol": "KRAKEN:AEROUSD",
+          "exchange": "KRAKEN",
+          "base": "AERO",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/AEROUSD/?exchange=KRAKEN",
+          "page_title": "AERO Price Today — AEROUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:28.899395+00:00"
+        }
+      ]
+    },
+    {
+      "id": 39064,
+      "symbol": "NIGHT",
+      "name": "Midnight",
+      "markets": [
+        {
+          "symbol": "BINANCE:NIGHTUSDT",
+          "exchange": "BINANCE",
+          "base": "NIGHT",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/NIGHTUSDT/?exchange=BINANCE",
+          "page_title": "NIGHT / TetherUS Price Today — NIGHTUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:28.961833+00:00"
+        },
+        {
+          "symbol": "KRAKEN:NIGHTUSD",
+          "exchange": "KRAKEN",
+          "base": "NIGHT",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/NIGHTUSD/?exchange=KRAKEN",
+          "page_title": "NIGHT Price Today — NIGHTUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:29.443296+00:00"
+        }
+      ]
+    },
+    {
+      "id": 7186,
+      "symbol": "CAKE",
+      "name": "PancakeSwap",
+      "markets": [
+        {
+          "symbol": "BINANCE:CAKEUSDT",
+          "exchange": "BINANCE",
+          "base": "CAKE",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/CAKEUSDT/?exchange=BINANCE",
+          "page_title": "CAKEUSDT — PancakeSwap/Tether Price Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:29.115634+00:00"
+        },
+        {
+          "symbol": "KRAKEN:CAKEUSD",
+          "exchange": "KRAKEN",
+          "base": "CAKE",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/CAKEUSD/?exchange=KRAKEN",
+          "page_title": "PancakeSwap Price and Chart — CAKE to USD — TradingView",
+          "checked_at": "2026-10-06T05:04:29.621867+00:00"
+        }
+      ]
+    },
+    {
+      "id": 38892,
+      "symbol": "STABLE",
+      "name": "Stable",
+      "markets": [
+        {
+          "symbol": "KRAKEN:STABLEUSD",
+          "exchange": "KRAKEN",
+          "base": "STABLE",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/STABLEUSD/?exchange=KRAKEN",
+          "page_title": "STABLE Price Today — STABLEUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:29.736396+00:00"
+        },
+        {
+          "symbol": "BYBIT:STABLEUSDT",
+          "exchange": "BYBIT",
+          "base": "STABLE",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/STABLEUSDT/?exchange=BYBIT",
+          "page_title": "STABLEUSDT SPOT Price Today — STABLEUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:31.024144+00:00"
+        }
+      ]
+    },
+    {
+      "id": 7226,
+      "symbol": "INJ",
+      "name": "Injective",
+      "markets": [
+        {
+          "symbol": "BINANCE:INJUSDT",
+          "exchange": "BINANCE",
+          "base": "INJ",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/INJUSDT/?exchange=BINANCE",
+          "page_title": "INJ / TetherUS Price Today — INJUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:29.342991+00:00"
+        },
+        {
+          "symbol": "KRAKEN:INJUSD",
+          "exchange": "KRAKEN",
+          "base": "INJ",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/INJUSD/?exchange=KRAKEN",
+          "page_title": "INJ Price Today — INJUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:29.753823+00:00"
+        }
+      ]
+    },
+    {
+      "id": 3077,
+      "symbol": "VET",
+      "name": "VeChain",
+      "markets": [
+        {
+          "symbol": "BINANCE:VETUSDT",
+          "exchange": "BINANCE",
+          "base": "VET",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/VETUSDT/?exchange=BINANCE",
+          "page_title": "VETUSDT — Vechain/Tether Price Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:29.924314+00:00"
+        },
+        {
+          "symbol": "KRAKEN:VETUSD",
+          "exchange": "KRAKEN",
+          "base": "VET",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/VETUSD/?exchange=KRAKEN",
+          "page_title": "Vechain Price and Chart — VET to USD — TradingView",
+          "checked_at": "2026-10-06T05:04:30.384676+00:00"
+        }
+      ]
+    },
+    {
+      "id": 131,
+      "symbol": "DASH",
+      "name": "Dash",
+      "markets": [
+        {
+          "symbol": "BINANCE:DASHUSDT",
+          "exchange": "BINANCE",
+          "base": "DASH",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/DASHUSDT/?exchange=BINANCE",
+          "page_title": "Dash / TetherUS Price Today — DASHUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:30.015946+00:00"
+        },
+        {
+          "symbol": "KRAKEN:DASHUSD",
+          "exchange": "KRAKEN",
+          "base": "DASH",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/DASHUSD/?exchange=KRAKEN",
+          "page_title": "DASHUSD – DASH Price Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:30.460814+00:00"
+        }
+      ]
+    },
+    {
+      "id": 2634,
+      "symbol": "XDC",
+      "name": "XDC Network",
+      "markets": [
+        {
+          "symbol": "KRAKEN:XDCUSD",
+          "exchange": "KRAKEN",
+          "base": "XDC",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/XDCUSD/?exchange=KRAKEN",
+          "page_title": "XDC Price Today — XDCUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:30.653631+00:00"
+        },
+        {
+          "symbol": "BYBIT:XDCUSDT",
+          "exchange": "BYBIT",
+          "base": "XDC",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/XDCUSDT/?exchange=BYBIT",
+          "page_title": "XDCUSDT SPOT Price Today — XDCUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:32.330801+00:00"
+        }
+      ]
+    },
+    {
+      "id": 21794,
+      "symbol": "APT",
+      "name": "Aptos",
+      "markets": [
+        {
+          "symbol": "BINANCE:APTUSDT",
+          "exchange": "BINANCE",
+          "base": "APT",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/APTUSDT/?exchange=BINANCE",
+          "page_title": "APT / TetherUS Price Today — APTUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:30.834313+00:00"
+        },
+        {
+          "symbol": "KRAKEN:APTUSD",
+          "exchange": "KRAKEN",
+          "base": "APT",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/APTUSD/?exchange=KRAKEN",
+          "page_title": "APT Price Today — APTUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:31.340219+00:00"
+        }
+      ]
+    },
+    {
+      "id": 29814,
+      "symbol": "ETHFI",
+      "name": "ether.fi",
+      "markets": [
+        {
+          "symbol": "BINANCE:ETHFIUSDT",
+          "exchange": "BINANCE",
+          "base": "ETHFI",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/ETHFIUSDT/?exchange=BINANCE",
+          "page_title": "ETHFI / TetherUS Price Today — ETHFIUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:30.962587+00:00"
+        },
+        {
+          "symbol": "KRAKEN:ETHFIUSD",
+          "exchange": "KRAKEN",
+          "base": "ETHFI",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/ETHFIUSD/?exchange=KRAKEN",
+          "page_title": "ETHFI Price Today — ETHFIUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:31.444417+00:00"
+        }
+      ]
+    },
+    {
+      "id": 4847,
+      "symbol": "STX",
+      "name": "Stacks",
+      "markets": [
+        {
+          "symbol": "BINANCE:STXUSDT",
+          "exchange": "BINANCE",
+          "base": "STX",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/STXUSDT/?exchange=BINANCE",
+          "page_title": "Stacks / TetherUS Price Today — STXUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:31.561640+00:00"
+        },
+        {
+          "symbol": "KRAKEN:STXUSD",
+          "exchange": "KRAKEN",
+          "base": "STX",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/STXUSD/?exchange=KRAKEN",
+          "page_title": "STX Price Today — STXUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:32.022176+00:00"
+        }
+      ]
+    },
+    {
+      "id": 7950,
+      "symbol": "FLR",
+      "name": "Flare",
+      "markets": [
+        {
+          "symbol": "KRAKEN:FLRUSD",
+          "exchange": "KRAKEN",
+          "base": "FLR",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/FLRUSD/?exchange=KRAKEN",
+          "page_title": "FLR Price Today — FLRUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:32.212202+00:00"
+        },
+        {
+          "symbol": "COINBASE:FLRUSD",
+          "exchange": "COINBASE",
+          "base": "FLR",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/FLRUSD/?exchange=COINBASE",
+          "page_title": "Flare Price Today — FLRUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:32.664145+00:00"
+        }
+      ]
+    },
+    {
+      "id": 28177,
+      "symbol": "PYTH",
+      "name": "Pyth Network",
+      "markets": [
+        {
+          "symbol": "BINANCE:PYTHUSDT",
+          "exchange": "BINANCE",
+          "base": "PYTH",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/PYTHUSDT/?exchange=BINANCE",
+          "page_title": "PYTH / TetherUS Price Today — PYTHUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:31.917868+00:00"
+        },
+        {
+          "symbol": "KRAKEN:PYTHUSD",
+          "exchange": "KRAKEN",
+          "base": "PYTH",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/PYTHUSD/?exchange=KRAKEN",
+          "page_title": "PYTH Price Today — PYTHUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:32.350609+00:00"
+        }
+      ]
+    },
+    {
+      "id": 34466,
+      "symbol": "PENGU",
+      "name": "Pudgy Penguins",
+      "markets": [
+        {
+          "symbol": "BINANCE:PENGUUSDT",
+          "exchange": "BINANCE",
+          "base": "PENGU",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/PENGUUSDT/?exchange=BINANCE",
+          "page_title": "PENGU / TetherUS Price Today — PENGUUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:32.482795+00:00"
+        },
+        {
+          "symbol": "KRAKEN:PENGUUSD",
+          "exchange": "KRAKEN",
+          "base": "PENGU",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/PENGUUSD/?exchange=KRAKEN",
+          "page_title": "PENGU Price Today — PENGUUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:33.135459+00:00"
+        }
+      ]
+    },
+    {
+      "id": 3773,
+      "symbol": "FET",
+      "name": "Artificial Superintelligence Alliance",
+      "markets": [
+        {
+          "symbol": "BINANCE:FETUSDT",
+          "exchange": "BINANCE",
+          "base": "FET",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/FETUSDT/?exchange=BINANCE",
+          "page_title": "Fetch.AI Coin — FET USDT Price Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:32.761363+00:00"
+        },
+        {
+          "symbol": "KRAKEN:FETUSD",
+          "exchange": "KRAKEN",
+          "base": "FET",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/FETUSD/?exchange=KRAKEN",
+          "page_title": "FET Price Today — FETUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:33.218728+00:00"
+        }
+      ]
+    },
+    {
+      "id": 8526,
+      "symbol": "RAY",
+      "name": "Raydium",
+      "markets": [
+        {
+          "symbol": "BINANCE:RAYUSDT",
+          "exchange": "BINANCE",
+          "base": "RAY",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/RAYUSDT/?exchange=BINANCE",
+          "page_title": "RAY / TetherUS Price Today — RAYUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:32.756238+00:00"
+        },
+        {
+          "symbol": "KRAKEN:RAYUSD",
+          "exchange": "KRAKEN",
+          "base": "RAY",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/RAYUSD/?exchange=KRAKEN",
+          "page_title": "RAY Price Today — RAYUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:33.303150+00:00"
+        }
+      ]
+    },
+    {
+      "id": 6538,
+      "symbol": "CRV",
+      "name": "Curve DAO Token",
+      "markets": [
+        {
+          "symbol": "BINANCE:CRVUSDT",
+          "exchange": "BINANCE",
+          "base": "CRV",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/CRVUSDT/?exchange=BINANCE",
+          "page_title": "CRV / TetherUS Price Today — CRVUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:33.096143+00:00"
+        },
+        {
+          "symbol": "KRAKEN:CRVUSD",
+          "exchange": "KRAKEN",
+          "base": "CRV",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/CRVUSD/?exchange=KRAKEN",
+          "page_title": "Curve DAO Token Price Today — CRVUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:33.577733+00:00"
+        }
+      ]
+    },
+    {
+      "id": 35336,
+      "symbol": "TRUMP",
+      "name": "OFFICIAL TRUMP",
+      "markets": [
+        {
+          "symbol": "BINANCE:TRUMPUSDT",
+          "exchange": "BINANCE",
+          "base": "TRUMP",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/TRUMPUSDT/?exchange=BINANCE",
+          "page_title": "Official Trump to Tether Price Chart — TRUMP USDT — TradingView",
+          "checked_at": "2026-10-06T05:04:33.564404+00:00"
+        },
+        {
+          "symbol": "KRAKEN:TRUMPUSD",
+          "exchange": "KRAKEN",
+          "base": "TRUMP",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/TRUMPUSD/?exchange=KRAKEN",
+          "page_title": "TRUMP USD — Trump Coin Price and Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:34.012023+00:00"
+        }
+      ]
+    },
+    {
+      "id": 29420,
+      "symbol": "VIRTUAL",
+      "name": "Virtuals Protocol",
+      "markets": [
+        {
+          "symbol": "BINANCE:VIRTUALUSDT",
+          "exchange": "BINANCE",
+          "base": "VIRTUAL",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/VIRTUALUSDT/?exchange=BINANCE",
+          "page_title": "VIRTUAL / TetherUS Price Today — VIRTUALUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:33.639230+00:00"
+        },
+        {
+          "symbol": "KRAKEN:VIRTUALUSD",
+          "exchange": "KRAKEN",
+          "base": "VIRTUAL",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/VIRTUALUSD/?exchange=KRAKEN",
+          "page_title": "VIRTUAL Price Today — VIRTUALUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:34.136404+00:00"
+        }
+      ]
+    },
+    {
+      "id": 23149,
+      "symbol": "SEI",
+      "name": "Sei",
+      "markets": [
+        {
+          "symbol": "BINANCE:SEIUSDT",
+          "exchange": "BINANCE",
+          "base": "SEI",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/SEIUSDT/?exchange=BINANCE",
+          "page_title": "SEI / TetherUS Price Today — SEIUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:33.733458+00:00"
+        },
+        {
+          "symbol": "KRAKEN:SEIUSD",
+          "exchange": "KRAKEN",
+          "base": "SEI",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/SEIUSD/?exchange=KRAKEN",
+          "page_title": "SEI Price Today — SEIUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:34.227143+00:00"
+        }
+      ]
+    },
+    {
+      "id": 2694,
+      "symbol": "NEXO",
+      "name": "Nexo",
+      "markets": [
+        {
+          "symbol": "BINANCE:NEXOUSDT",
+          "exchange": "BINANCE",
+          "base": "NEXO",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/NEXOUSDT/?exchange=BINANCE",
+          "page_title": "NEXO / TetherUS Price Today — NEXOUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:34.006206+00:00"
+        },
+        {
+          "symbol": "BYBIT:NEXOUSDT",
+          "exchange": "BYBIT",
+          "base": "NEXO",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/NEXOUSDT/?exchange=BYBIT",
+          "page_title": "NEXOUSDT SPOT Price Today — NEXOUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:36.523557+00:00"
+        }
+      ]
+    },
+    {
+      "id": 38590,
+      "symbol": "币安人生",
+      "name": "币安人生",
+      "markets": [
+        {
+          "symbol": "BINANCE:BIANRENSHENGUSDT",
+          "exchange": "BINANCE",
+          "base": "BIANRENSHENG",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/BIANRENSHENGUSDT/?exchange=BINANCE",
+          "page_title": "币安人生 (BinanceLife) / TetherUS Price Today — BIANRENSHENGUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:05:41.331973+00:00"
+        }
+      ]
+    },
+    {
+      "id": 2563,
+      "symbol": "TUSD",
+      "name": "TrueUSD",
+      "markets": [
+        {
+          "symbol": "BINANCE:TUSDUSDT",
+          "exchange": "BINANCE",
+          "base": "TUSD",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/TUSDUSDT/?exchange=BINANCE",
+          "page_title": "TrueUSD / TetherUS Price Today — TUSDUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:34.531319+00:00"
+        },
+        {
+          "symbol": "KUCOIN:TUSDUSDT",
+          "exchange": "KUCOIN",
+          "base": "TUSD",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/TUSDUSDT/?exchange=KUCOIN",
+          "page_title": "TrueUSD / Tether Price Today — TUSDUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:37.059254+00:00"
+        }
+      ]
+    },
+    {
+      "id": 20641,
+      "symbol": "EURC",
+      "name": "EURC",
+      "markets": [
+        {
+          "symbol": "KRAKEN:EURCUSD",
+          "exchange": "KRAKEN",
+          "base": "EURC",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/EURCUSD/?exchange=KRAKEN",
+          "page_title": "EURC Price Today — EURCUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:35.175042+00:00"
+        }
+      ]
+    },
+    {
+      "id": 22861,
+      "symbol": "TIA",
+      "name": "Celestia",
+      "markets": [
+        {
+          "symbol": "BINANCE:TIAUSDT",
+          "exchange": "BINANCE",
+          "base": "TIA",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/TIAUSDT/?exchange=BINANCE",
+          "page_title": "TIA / TetherUS Price Today — TIAUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:34.641849+00:00"
+        },
+        {
+          "symbol": "KRAKEN:TIAUSD",
+          "exchange": "KRAKEN",
+          "base": "TIA",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/TIAUSD/?exchange=KRAKEN",
+          "page_title": "TIA Price Today — TIAUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:35.070098+00:00"
+        }
+      ]
+    },
+    {
+      "id": 9481,
+      "symbol": "PENDLE",
+      "name": "Pendle",
+      "markets": [
+        {
+          "symbol": "BINANCE:PENDLEUSDT",
+          "exchange": "BINANCE",
+          "base": "PENDLE",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/PENDLEUSDT/?exchange=BINANCE",
+          "page_title": "PENDLE / TetherUS Price Today — PENDLEUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:35.484320+00:00"
+        },
+        {
+          "symbol": "KRAKEN:PENDLEUSD",
+          "exchange": "KRAKEN",
+          "base": "PENDLE",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/PENDLEUSD/?exchange=KRAKEN",
+          "page_title": "PENDLE Price Today — PENDLEUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:36.003166+00:00"
+        }
+      ]
+    },
+    {
+      "id": 36645,
+      "symbol": "XPL",
+      "name": "Plasma",
+      "markets": [
+        {
+          "symbol": "BINANCE:XPLUSDT",
+          "exchange": "BINANCE",
+          "base": "XPL",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/XPLUSDT/?exchange=BINANCE",
+          "page_title": "XPL / TetherUS Price Today — XPLUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:36.398861+00:00"
+        },
+        {
+          "symbol": "KRAKEN:XPLUSD",
+          "exchange": "KRAKEN",
+          "base": "XPL",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/XPLUSD/?exchange=KRAKEN",
+          "page_title": "XPL Price Today — XPLUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:36.818309+00:00"
+        }
+      ]
+    },
+    {
+      "id": 3602,
+      "symbol": "BSV",
+      "name": "Bitcoin SV",
+      "markets": [
+        {
+          "symbol": "KUCOIN:BSVUSDT",
+          "exchange": "KUCOIN",
+          "base": "BSV",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/BSVUSDT/?exchange=KUCOIN",
+          "page_title": "Bitcoin SV / Tether Price Today — BSVUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:39.116171+00:00"
+        },
+        {
+          "symbol": "MEXC:BSVUSDT",
+          "exchange": "MEXC",
+          "base": "BSV",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/BSVUSDT/?exchange=MEXC",
+          "page_title": "BitcoinSV / USDT Price Today — BSVUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:40.550019+00:00"
+        }
+      ]
+    },
+    {
+      "id": 38849,
+      "symbol": "PIEVERSE",
+      "name": "Pieverse",
+      "markets": [
+        {
+          "symbol": "KRAKEN:PIEVERSEUSD",
+          "exchange": "KRAKEN",
+          "base": "PIEVERSE",
+          "quote": "USD",
+          "source_url": "https://www.tradingview.com/symbols/PIEVERSEUSD/?exchange=KRAKEN",
+          "page_title": "PIEVERSE Price Today — PIEVERSEUSD Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:37.771092+00:00"
+        },
+        {
+          "symbol": "BYBIT:PIEVERSEUSDT",
+          "exchange": "BYBIT",
+          "base": "PIEVERSE",
+          "quote": "USDT",
+          "source_url": "https://www.tradingview.com/symbols/PIEVERSEUSDT/?exchange=BYBIT",
+          "page_title": "PIEVERSEUSDT SPOT Price Today — PIEVERSEUSDT Chart — TradingView",
+          "checked_at": "2026-10-06T05:04:39.087710+00:00"
+        }
+      ]
+    }
+  ]
+}

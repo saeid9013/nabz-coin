@@ -1,4 +1,4 @@
-import {sentimentOverview,renderProtocolBrowser,dexDetails,dexEmbedURL} from './analytics.js?v=19';
+import {sentimentOverview,renderProtocolBrowser,dexDetails,dexEmbedURL} from './analytics.js?v=20';
 export async function renderExplore({main,client,e,num,money,date,safeURL,current}){
  const tabs={sentiment:'ترس و طمع',defi:'دیفای',dex:'بازار DEX',projects:'اطلاعات پروژه‌ها'};
  const key=new URLSearchParams(location.hash.split('?')[1]).get('tab')||'sentiment';

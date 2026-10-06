@@ -1,5 +1,5 @@
-const CACHE='nabz-web-shell-v19';
-const FILES=['./','./index.html','./style.css','./app.js','./data.js','./ui.js','./explore.js','./analytics.js','./candles.js','./content/encyclopedia.json','./manifest.webmanifest','./assets/icon.svg','./assets/Vazirmatn-Regular.ttf','./assets/Vazirmatn-Bold.ttf'];
+const CACHE='nabz-web-shell-v20';
+const FILES=['./','./index.html','./style.css','./app.js','./data.js','./ui.js','./explore.js','./analytics.js','./candles.js','./content/candle-markets.json','./content/encyclopedia.json','./manifest.webmanifest','./assets/icon.svg','./assets/Vazirmatn-Regular.ttf','./assets/Vazirmatn-Bold.ttf'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(FILES)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith('nabz-web-shell-')&&key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));
 self.addEventListener('fetch',event=>{
